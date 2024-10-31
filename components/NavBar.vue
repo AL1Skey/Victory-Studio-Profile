@@ -21,7 +21,7 @@
                     <li class="active menu-item-has-children">
                       <a href="#">Home</a>
                       <ul class="sub-menu">
-                        <li class="active">
+                        <li>
                           <a href="index.html">Creative Agency</a>
                         </li>
                         <li><a href="index-2.html">Personal Portfolio</a></li>

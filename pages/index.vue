@@ -59,7 +59,7 @@ defineExpose({ isMounted });
       <MainPageProject/>
     <!-- project-area-end -->
 
-    <!-- testimonial-area -->
+    <!-- our-client-area -->
       <MainPageTestimonial/>
     <!-- testimonial-area-end -->
 
@@ -68,7 +68,7 @@ defineExpose({ isMounted });
     <!-- consultation-area-end -->
 
     <!-- blog-area -->
-      <MainPageBlog/>
+
     <!-- blog-area-end -->
 
     <!-- newsletter-area -->

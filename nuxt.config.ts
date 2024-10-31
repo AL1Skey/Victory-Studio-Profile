@@ -20,8 +20,15 @@ export default defineNuxtConfig({
     { src: 'plugins/external-scripts.js', mode: 'client' }
   ],
   vite: {
+    
     build: {
       sourcemap: false, // Disable source maps for production build
     },
+    server: {
+      hmr: {
+        overlay: false, // Disables caching for HMR updates
+      },
+    },
   },
+  
 });
