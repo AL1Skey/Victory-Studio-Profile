@@ -1,6 +1,6 @@
 // plugins/external-scripts.js
 export default defineNuxtPlugin((nuxtApp) => {
-    if (process.client) { // Ensure scripts only run on the client side
+    if (process.client || process.static) { // Ensure scripts only run on the client side
       import('assets/js/vendor/jquery-3.6.0.min.js');
       import('assets/js/bootstrap.min.js');
       import('assets/js/isotope.pkgd.min.js');

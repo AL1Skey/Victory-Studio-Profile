@@ -12,36 +12,27 @@
             <div class="menu-wrap">
               <nav class="menu-nav">
                 <div class="logo">
-                  <a href="index.html"
+                  <a href="#"
                     ><img src="assets/img/logo/logo.png" alt="Logo"
                   /></a>
                 </div>
                 <div class="navbar-wrap main-menu d-none d-lg-flex">
                   <ul class="navigation">
-                    <li class="active menu-item-has-children">
-                      <a href="#">Home</a>
-                      <ul class="sub-menu">
-                        <li>
-                          <a href="index.html">Creative Agency</a>
-                        </li>
-                        <li><a href="index-2.html">Personal Portfolio</a></li>
-                        <li><a href="index-3.html">Digital Agency</a></li>
-                      </ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about-area">About Us</a></li>
+                    <li>
+                      <a href="#project-area">Portfolio Details</a>
                     </li>
-                    <li><a href="about-us.html">About Us</a></li>
-                    <li class="menu-item-has-children">
+                    <li>
+                      <a href="#services-area">Services Details</a>
+                    </li>
+                    <li><a href="#footer-area">Contact Us</a></li>
+                    <!-- <li class="menu-item-has-children">
                       <a href="#">pages</a>
                       <ul class="sub-menu">
                         <li><a href="about-me.html">About Me</a></li>
                         <li><a href="team.html">Team Page</a></li>
                         <li><a href="team-details.html">Team Details</a></li>
-                        <li>
-                          <a href="project-details.html">Portfolio Details</a>
-                        </li>
-                        <li>
-                          <a href="services-details.html">Services Details</a>
-                        </li>
-                        <li><a href="contact.html">Contact Us</a></li>
                       </ul>
                     </li>
                     <li class="menu-item-has-children">
@@ -50,13 +41,13 @@
                         <li><a href="blog.html">Our Blog</a></li>
                         <li><a href="blog-details.html">Blog Details</a></li>
                       </ul>
-                    </li>
+                    </li> -->
                   </ul>
                 </div>
                 <div class="header-action">
                   <ul class="list-wrap">
                     <li class="header-btn">
-                      <a href="#!" class="btn">Contact <span></span></a>
+                      <a href="https://api.whatsapp.com/send?phone=6281930456886&text=Halo%20saya%20tertarik%20dengan%20jasa%20pembuatan%20website." class="btn">Contact <span></span></a>
                     </li>
                   </ul>
                 </div>
@@ -68,14 +59,14 @@
               <nav class="menu-box">
                 <div class="close-btn"><i class="fas fa-times"></i></div>
                 <div class="nav-logo">
-                  <a href="index.html"
+                  <a href="#"
                     ><img src="assets/img/logo/logo.png" alt="Logo"
                   /></a>
                 </div>
                 <div class="menu-outer">
                   <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
                 </div>
-                <div class="social-links">
+                <!-- <div class="social-links">
                   <ul class="clearfix list-wrap">
                     <li>
                       <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -93,7 +84,7 @@
                       <a href="#"><i class="fab fa-youtube"></i></a>
                     </li>
                   </ul>
-                </div>
+                </div> -->
               </nav>
             </div>
             <div class="menu-backdrop"></div>

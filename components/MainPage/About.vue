@@ -1,9 +1,11 @@
 <script lang="ts" setup>
-
+import about from '@/assets/json/aboutus.json'
+import { ref } from 'vue'
+const data = about
 </script>
 
 <template>
-    <section class="about-area">
+    <section class="about-area" id="about-area">
       <div class="container custom-container">
         <div class="about-inner">
           <div class="row align-items-center justify-content-center">
@@ -17,13 +19,11 @@
                 <div class="section-title mb-25">
                   <span class="sub-title">About Company</span>
                   <h2 class="title">
-                    A Full Service Design and Branding Agency
+                    {{ data[0].title }}
                   </h2>
                 </div>
                 <p>
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry. Lorem Ipsum has been the industry's
-                  standard.
+                  {{ data[0].description }}
                 </p>
                 <ul class="list-wrap">
                   <li>
@@ -31,10 +31,9 @@
                       <img src="assets/img/icon/about_icon01.png" alt="" />
                     </div>
                     <div class="content">
-                      <h4 class="title">Concept Creation</h4>
+                      <h4 class="title">Visi</h4>
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.
+                        {{ data[0].visi }}
                       </p>
                     </div>
                   </li>
@@ -43,19 +42,18 @@
                       <img src="assets/img/icon/about_icon02.png" alt="" />
                     </div>
                     <div class="content">
-                      <h4 class="title">Sketch Drawing</h4>
+                      <h4 class="title">Misi</h4>
                       <p>
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry.
+                        {{ data[0].misi }}
                       </p>
                     </div>
                   </li>
                 </ul>
                 <div class="about-content-bottom">
-                  <span>Think Creative Agency Are a Full Service Design</span>
+                  <span>{{ data[0].additional_info }}</span>
                   <div class="read-more-btn">
                     <a href="about-us.html" class="btn"
-                      >Read More <span></span
+                      >Contact Us <span></span
                     ></a>
                   </div>
                 </div>

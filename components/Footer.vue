@@ -1,17 +1,17 @@
 <template>
- <footer>
+ <footer id="footer-area">
     <div class="footer-area">
       <div class="footer-top">
-        <div class="container">
-          <div class="row">
+        <div class="container" >
+          <div class="row" style="justify-content: space-between !important;">
             <div class="col-lg-3 col-sm-6">
               <div class="footer-widget">
                 <div class="logo">
-                  <a href="index.html"
+                  <a href="/"
                     ><img src="assets/img/logo/w_logo.png" alt=""
                   /></a>
                 </div>
-                <div class="footer-social">
+                <!-- <div class="footer-social">
                   <ul class="list-wrap">
                     <li>
                       <a href="#"><i class="fab fa-facebook-f"></i></a>
@@ -26,7 +26,7 @@
                       <a href="#"><i class="fab fa-linkedin-in"></i></a>
                     </li>
                   </ul>
-                </div>
+                </div> -->
                 <div class="footer-contact">
                   <span>For Support</span>
                   <h2 class="title">
@@ -35,15 +35,14 @@
                 </div>
               </div>
             </div>
-            <div class="col-lg-3 col-sm-6">
+            <!-- <div class="col-lg-3 col-sm-6">
               <div class="footer-widget">
                 <h4 class="fw-title">Primary Pages</h4>
                 <div class="fw-link">
                   <ul class="list-wrap">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about-us.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="services-details.html">Service</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about-area">About</a></li>
+                    <li><a href="#services-area">Service</a></li>
                   </ul>
                 </div>
               </div>
@@ -53,14 +52,13 @@
                 <h4 class="fw-title">Pages</h4>
                 <div class="fw-link">
                   <ul class="list-wrap">
-                    <li><a href="about-us.html">About</a></li>
-                    <li><a href="contact.html">Pricing</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="contact.html">Request for Demo</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about-area">About</a></li>
+                    <li><a href="#services-area">Service</a></li>
                   </ul>
                 </div>
               </div>
-            </div>
+            </div> -->
             <div class="col-lg-3 col-sm-6">
               <div class="footer-widget">
                 <h4 class="fw-title">About Store</h4>
@@ -93,14 +91,14 @@
       <div class="footer-bottom">
         <div class="container">
           <div class="row align-items-center">
-            <div class="col-md-6">
+            <!-- <div class="col-md-6">
               <div class="cart-img">
                 <img src="assets/img/images/cart_img.png" alt="" />
               </div>
-            </div>
+            </div> -->
             <div class="col-md-6">
               <div class="copyright-text text-end">
-                <p>© 2023 xilio. All Rights Reserved</p>
+                <p>© 2024 Victory Studio. All Rights Reserved</p>
               </div>
             </div>
           </div>

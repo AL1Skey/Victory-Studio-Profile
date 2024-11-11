@@ -40,31 +40,31 @@ defineExpose({ isMounted });
   <!-- main-area -->
   <main>
     <!-- banner-area -->
-      <MainPageBanner/>
+    <MainPageBanner/>
     <!-- banner-area-end -->
 
     <!-- services-area -->
-      <MainPageService/>
+    <MainPageService/>
     <!-- services-area-end -->
 
     <!-- about-area -->
-      <MainPageAbout/>
+    <MainPageAbout/>
     <!-- about-area-end -->
 
     <!-- team-area -->
-      <MainPageTeam/>
+      <!-- <MainPageTeam/> -->
     <!-- team-area-end -->
 
     <!-- project-area -->
-      <MainPageProject/>
+    <MainPageProject/>
     <!-- project-area-end -->
 
     <!-- our-client-area -->
-      <MainPageTestimonial/>
+      <!-- <MainPageTestimonial/> -->
     <!-- testimonial-area-end -->
 
     <!-- consultation-area -->
-      <MainPageConsultation/>
+    <MainPageConsultation/>
     <!-- consultation-area-end -->
 
     <!-- blog-area -->
@@ -100,5 +100,3 @@ defineExpose({ isMounted });
 <script src="assets/js/main.js"></script> 
 -->
 </template>
-
-
