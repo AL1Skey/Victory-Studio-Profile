@@ -82,21 +82,33 @@ defineExpose({ isMounted });
   <!-- footer-area-end -->
 
   <!-- JS here -->
-  <!--
-<script src="assets/js/vendor/jquery-3.6.0.min.js"></script>
-<script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/isotope.pkgd.min.js"></script>
-<script src="assets/js/imagesloaded.pkgd.min.js"></script>
-<script src="assets/js/jquery.magnific-popup.min.js"></script>
-<script src="assets/js/jquery.odometer.min.js"></script>
-<script src="assets/js/swiper-bundle.min.js"></script>
-<script src="assets/js/jquery.appear.js"></script>
-<script src="assets/js/slick.min.js"></script>
-<script src="assets/js/ajax-form.js"></script>
-<script src="assets/js/parallax.min.js"></script>
-<script src="assets/js/jquery.parallaxScroll.min.js"></script>
-<script src="assets/js/tween-max.js"></script>
-<script src="assets/js/wow.min.js"></script>
-<script src="assets/js/main.js"></script> 
--->
+  
+<Script src="js/vendor/jquery-3.6.0.min.js"></Script>
+<Script src="js/bootstrap.min.js"></Script>
+<Script src="js/isotope.pkgd.min.js"></Script>
+<Script src="js/imagesloaded.pkgd.min.js"></Script>
+<Script src="js/jquery.magnific-popup.min.js"></Script>
+<Script src="js/jquery.odometer.min.js"></Script>
+<Script src="js/swiper-bundle.min.js"></Script>
+<Script src="js/jquery.appear.js"></Script>
+<Script src="js/slick.min.js"></Script>
+<Script src="js/ajax-form.js"></Script>
+<Script src="js/parallax.min.js"></Script>
+<Script src="js/jquery.parallaxScroll.min.js"></Script>
+<Script src="js/tween-max.js"></Script>
+<Script src="js/wow.min.js"></Script>
+<Script src="js/main.js"></Script> 
+
 </template>
+<!-- 
+<style scoped>
+@import "@/assets/css/bootstrap.min.css";
+@import "@/assets/css/animate.min.css";
+@import "@/assets/css/fontawesome-all.min.css";
+@import "@/assets/css/swiper-bundle.min.css";
+@import "@/assets/css/magnific-popup.css";
+@import "@/assets/css/slick.css";
+@import "@/assets/css/default.css";
+@import "@/assets/css/style.css";
+
+</style> -->
