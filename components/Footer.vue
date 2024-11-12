@@ -1,6 +1,18 @@
-<script lang="ts">
+<!-- <script lang="ts" >
 import footerData from "@/public/json/footer.json";
 const data = footerData;
+export default {
+  data() {
+    return {
+      data: footerData,
+    };
+  },
+};
+</script> -->
+<script lang="ts" setup>
+import footerData from "@/public/json/footer.json";
+const data = footerData;
+
 </script>
 <template>
  <footer id="footer-area">
@@ -34,7 +46,7 @@ const data = footerData;
                 <div class="footer-contact">
                   <span>For Support</span>
                   <h2 class="title">
-                    <a href="https://api.whatsapp.com/send?phone=6281930456886&text=Halo%20saya%20tertarik%20dengan%20jasa%20pembuatan%20website.">{{ data.phone }}</a>
+                    <a href="https://api.whatsapp.com/send?phone=6281930456886&text=Halo%20saya%20tertarik%20dengan%20jasa%20pembuatan%20website.">{{ data[0].phone }}</a>
                   </h2>
                 </div>
               </div>
@@ -71,18 +83,18 @@ const data = footerData;
                     <li>
                       <img src="assets/img/icon/phone_icon.svg" alt="" /><a
                         href="https://api.whatsapp.com/send?phone=6281930456886&text=Halo%20saya%20tertarik%20dengan%20jasa%20pembuatan%20website."
-                        >{{ data.phone }}</a
+                        >{{ data[0].phone }}</a
                       >
                     </li>
                     <li>
                       <img src="assets/img/icon/mail_icon.svg" alt="" /><a
                         href="mailto:company@gmail.com"
-                        >{{ data.email }}</a
+                        >{{ data[0].email }}</a
                       >
                     </li>
                     <li>
                       <img src="assets/img/icon/loction_icon.svg" alt="" /><span
-                        >{{ data.address }}</span
+                        >{{ data[0].address }}</span
                       >
                     </li>
                   </ul>

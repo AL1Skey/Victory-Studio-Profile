@@ -8,6 +8,7 @@ export default defineNuxtConfig({
   app: {
     head: {
       link:[
+        {rel: 'icon', type: 'image/png', href: 'images/Logo/Artboard 1.png'},
         {rel: 'stylesheet', href:"css/bootstrap.min.css"},
         {rel: 'stylesheet', href:"css/animate.min.css"},
         {rel: 'stylesheet', href:"css/magnific-popup.css"},
