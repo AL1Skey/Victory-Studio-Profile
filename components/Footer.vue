@@ -1,3 +1,7 @@
+<script lang="ts">
+import footerData from "@/public/json/footer.json";
+const data = footerData;
+</script>
 <template>
  <footer id="footer-area">
     <div class="footer-area">
@@ -8,7 +12,7 @@
               <div class="footer-widget">
                 <div class="logo">
                   <a href="/"
-                    ><img src="assets/img/logo/w_logo.png" alt=""
+                    ><img src="/public/images/Logo/Artboard 1.png" alt=""
                   /></a>
                 </div>
                 <!-- <div class="footer-social">
@@ -30,7 +34,7 @@
                 <div class="footer-contact">
                   <span>For Support</span>
                   <h2 class="title">
-                    <a href="tel:0123456789">0123 - 567 - 7650</a>
+                    <a href="https://api.whatsapp.com/send?phone=6281930456886&text=Halo%20saya%20tertarik%20dengan%20jasa%20pembuatan%20website.">{{ data.phone }}</a>
                   </h2>
                 </div>
               </div>
@@ -66,19 +70,19 @@
                   <ul class="list-wrap">
                     <li>
                       <img src="assets/img/icon/phone_icon.svg" alt="" /><a
-                        href="tel:0123456789"
-                        >8 (495) 989—20—11</a
+                        href="https://api.whatsapp.com/send?phone=6281930456886&text=Halo%20saya%20tertarik%20dengan%20jasa%20pembuatan%20website."
+                        >{{ data.phone }}</a
                       >
                     </li>
                     <li>
                       <img src="assets/img/icon/mail_icon.svg" alt="" /><a
                         href="mailto:company@gmail.com"
-                        >company@gmail.com</a
+                        >{{ data.email }}</a
                       >
                     </li>
                     <li>
                       <img src="assets/img/icon/loction_icon.svg" alt="" /><span
-                        >Ranelagh Place, Liverpool, L3 5UL, England</span
+                        >{{ data.address }}</span
                       >
                     </li>
                   </ul>

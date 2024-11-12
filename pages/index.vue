@@ -15,7 +15,7 @@ defineExpose({ isMounted });
     <div id="loader" class="loader">
         <div class="loader-container">
             <div class="loader-icon">
-                <img src="assets/img/preloader.png" alt="Preloader" />
+                <img src="/public/images/Logo/Artboard 1.png" alt="Preloader" />
             </div>
         </div>
     </div>
