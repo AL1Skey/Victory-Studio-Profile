@@ -7,13 +7,15 @@
               <div class="section-title mb-25">
                 <img src="assets/img/icon/consultation_icon01.png" alt="" />
                 <span class="sub-title">95% Accuracy</span>
-                <h2 class="title">Worldwide Best Digital Marketing Agency</h2>
+                <h2 class="title">Agensi Pemasaran Digital Terbaik di Dunia</h2>
               </div>
               <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and
+                Kami adalah agensi pemasaran digital yang berdedikasi untuk
+                membantu bisnis Anda tumbuh. Kami menawarkan layanan pemasaran
+                digital yang komprehensif untuk membantu Anda mencapai tujuan
+                bisnis Anda. Dari desain web hingga strategi pemasaran konten,
+                kami memiliki semua yang Anda butuhkan untuk mengembangkan
+                bisnis Anda secara online.
               </p>
               <div class="consultation-list">
                 <ul class="list-wrap">

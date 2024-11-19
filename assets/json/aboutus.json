@@ -1,10 +1,10 @@
 [
     {
         "image": "assets/images/about/about-1.jpg",
-        "title": "Our Story",
-        "description": "Our Story is Good Story about.",
-        "visi":"Visi",
-        "misi":"Misi",
-        "additional_info": "This is additional info for about us"
+        "title": "Kisah Kami",
+        "description": "Kami mengkhususkan diri dalam membuat situs web khusus yang disesuaikan dengan kebutuhan bisnis Anda. Tim pengembang dan desainer berpengalaman kami bekerja sama dengan Anda untuk mewujudkan visi Anda, memastikan kehadiran online yang mulus dan menarik.",
+        "visi": "Menjadi penyedia solusi web inovatif terkemuka yang memberdayakan bisnis untuk sukses online.",
+        "misi": "Memberikan solusi web inovatif berkualitas tinggi yang mendorong kesuksesan bisnis dan melebihi harapan klien.",
+        "info": "Layanan pembuatan situs web terbaik untuk memberdayakan bisnis yang kuat."
     }
 ]

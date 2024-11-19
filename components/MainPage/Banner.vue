@@ -15,13 +15,13 @@ import 'swiper/css/autoplay';
     <div class="container">
       <div class="row align-items-center">
         <div class="col-lg-6">
-          <div class="banner-img wow fadeInLeft" data-wow-delay=".4s">
+          <div class="banner-img wow fadeInLeft" data-wow-delay="1s">
             <img src="assets/img/banner/banner_img.png" alt="Banner Image" />
           </div>
         </div>
         <div class="col-lg-6">
           <div class="banner-content">
-            <span class="sub-title wow fadeInUp" data-wow-delay=".2s">
+            <span class="sub-title wow fadeInUp" data-wow-delay="1s">
               Amazing <strong>Starts</strong> Here
             </span>
             <Swiper

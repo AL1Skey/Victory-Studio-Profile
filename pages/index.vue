@@ -60,6 +60,12 @@ defineExpose({ isMounted });
     <!-- project-area-end -->
 
     <!-- our-client-area -->
+      <MainPageClients/>
+    <!-- our-client-area-end -->
+    <!-- Service 2 Area -->
+      <MainPageService2/>
+    <!-- Service 2 Area end-->
+    <!-- testimonial-area -->
       <!-- <MainPageTestimonial/> -->
     <!-- testimonial-area-end -->
 
