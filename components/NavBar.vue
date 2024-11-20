@@ -27,21 +27,7 @@
                       <a href="#services-area">Services Details</a>
                     </li>
                     <li><a href="#footer-area">Contact Us</a></li>
-                    <!-- <li class="menu-item-has-children">
-                      <a href="#">pages</a>
-                      <ul class="sub-menu">
-                        <li><a href="about-me.html">About Me</a></li>
-                        <li><a href="team.html">Team Page</a></li>
-                        <li><a href="team-details.html">Team Details</a></li>
-                      </ul>
-                    </li>
-                    <li class="menu-item-has-children">
-                      <a href="#">News</a>
-                      <ul class="sub-menu">
-                        <li><a href="blog.html">Our Blog</a></li>
-                        <li><a href="blog-details.html">Blog Details</a></li>
-                      </ul>
-                    </li> -->
+
                   </ul>
                 </div>
                 <div class="header-action">
@@ -66,25 +52,7 @@
                 <div class="menu-outer">
                   <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
                 </div>
-                <!-- <div class="social-links">
-                  <ul class="clearfix list-wrap">
-                    <li>
-                      <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-instagram"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-linkedin-in"></i></a>
-                    </li>
-                    <li>
-                      <a href="#"><i class="fab fa-youtube"></i></a>
-                    </li>
-                  </ul>
-                </div> -->
+              
               </nav>
             </div>
             <div class="menu-backdrop"></div>

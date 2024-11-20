@@ -3,11 +3,11 @@
 </script>
 
 <template>
-    <section class="services-area pt-35 pb-95" id="services-area">
+    <section class="services-area pt-35 pb-95 " id="services-area">
       <div class="container">
-        <div class="row justify-content-center">
+        <div class="row justify-content-center ">
           <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10">
-            <div class="services-item wow fadeInUp" data-wow-delay=".2s">
+            <div class="services-item wow fadeInUp " data-wow-delay=".2s">
               <div class="services-icon">
                 <img src="assets/img/icon/services_icon01.png" alt="" />
               </div>
