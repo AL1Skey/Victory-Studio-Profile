@@ -1,5 +1,22 @@
+<script lang="ts" setup>
+import { onMounted } from "vue";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+onMounted(() => {
+    AOS.init({
+        duration: 600, // Animation duration in milliseconds
+        once: false, // Allow animations to repeat on scroll
+        easing: "ease-in-out", // Smooth animation easing
+        anchorPlacement: "top-bottom", // Specifies animation start point
+    });
+});
+</script>
+
+
 <template>
-<section class="newsletter-area pt-110 pb-120">
+<section class="newsletter-area pt-110 pb-120" data-aos="fade-up"
+data-aos-anchor-placement="center-bottom">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6">
