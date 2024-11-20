@@ -1,6 +1,7 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
+  css: ['~/assets/css/main.css'],
   // plugins: [
   //   { src: 'plugins/external-scripts.js', mode: 'client' },
   //   { src: 'plugins/external-style.js', mode: 'client' },
@@ -96,12 +97,12 @@ export default defineNuxtConfig({
   //   "@/assets/css/style.css",
   //   "@/assets/css/responsive.css"
   //   ],
-    postcss: {
-      plugins: {
-        autoprefixer: {},
-        cssnano: { preset: 'default' }
-      }
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
     },
+  },
   // vite: {
   //   build: {
   //     sourcemap: false,
