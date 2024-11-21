@@ -1,58 +1,69 @@
 <template>
-  <section class="project-area" id="project-area">
-    <div class="container">
-      <div class="row align-items-center">
-        <div class="col-xl-4">
-          <div class="project-content">
-            <div class="section-title white-title mb-30">
-              <span class="sub-title">Our Complete Craft</span>
-              <h2 class="title">{{ preproject[0].title }}</h2>
-            </div>
-            <p>{{ preproject[0].description }}</p>
-            <div class="content-bottom">
-              <a href="https://api.whatsapp.com/send?phone=6281930456886&text=Halo%20saya%20tertarik%20dengan%20jasa%20pembuatan%20website." class="btn"
-                >Contact Us <span></span
-              ></a>
-              <!-- <div class="project-nav">
+    <section
+        class="project-area tw-rounded-l-full tw-bg-gradient-to-r tw-from-blue-800 tw-via-purple-800 tw-to-pink-500"
+        id="project-area"
+    >
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-4">
+                    <div class="project-content">
+                        <div class="section-title white-title mb-30" data-aos="fade-right">
+                            <span class="sub-title">Our Complete Craft</span>
+                            <h2 class="title">{{ preproject[0].title }}</h2>
+                        </div>
+                        <p data-aos="fade-right">{{ preproject[0].description }}</p>
+                        <div class="content-bottom">
+                            <a data-aos="fade-right"
+                                href="https://api.whatsapp.com/send?phone=6281930456886&text=Halo%20saya%20tertarik%20dengan%20jasa%20pembuatan%20website."
+                                class="btn"
+                                >Contact Us <span></span
+                            ></a>
+                            <!-- <div class="project-nav">
                 <button class="swiper-button-prev" aria-label="prev"></button>
                 <button class="swiper-button-next" aria-label="next"></button>
               </div> -->
-            </div>
-          </div>
-        </div>
-        <div class="col-xl-8">
-          <div class="project-item-wrap">
-            <div class="swiper-container project-active">
-              <div class="swiper-wrapper">
-                <div class="swiper-slide" v-for="i in data">
-                  <div class="project-item">
-                    <a :href="i.url" class="project-img ">
-                      <img :src="`/images/${i.image}`" :alt="i.title" />
-                    </a>
-                  </div>
+                        </div>
+                    </div>
                 </div>
-              </div>
+                <div class="col-xl-8">
+                    <div class="project-item-wrap">
+                        <div class="swiper-container project-active tw-h-400" data-aos="fade-left">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" v-for="i in data">
+                                    <div class="project-item">
+                                        <a :href="i.url" class="project-img">
+                                            <img
+                                                :src="`/images/${i.image}`"
+                                                :alt="i.title"
+                                            />
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
-    <div class="project-shape-wrap">
-      <img
-        src="assets/img/project/project_shape01.png"
-        alt="Shape One"
-        class="shape-one ribbonRotate"
-      />
-      <img
-        src="assets/img/project/project_shape02.png"
-        alt="Shape Two"
-        class="shape-two ribbonRotate"
-      />
-    </div>
-  </section>
+        <div class="project-shape-wrap">
+            <img
+                src="assets/img/project/project_shape01.png"
+                alt="Shape One"
+                class="shape-one ribbonRotate"
+            />
+            <img
+                src="assets/img/project/project_shape02.png"
+                alt="Shape Two"
+                class="shape-two ribbonRotate"
+            />
+        </div>
+    </section>
 </template>
 
 <script lang="ts">
+
+import AOS from "aos";
+import "aos/dist/aos.css"
 import { register } from "swiper/element/bundle";
 import Swiper from "swiper";
 import { onMounted } from "vue";
@@ -66,9 +77,15 @@ export default {
     const data = project;
     const preproject = projecttext;
 
-    
 
-    onMounted(() => {
+
+        onMounted(() => {
+            AOS.init({
+        duration: 600, // Animation duration in milliseconds
+        once: false, // Allow animations to repeat on scroll
+        easing: "ease-in-out", // Smooth animation easing
+        anchorPlacement: "top-bottom", // Specifies animation start point
+    });
       const swiper = new Swiper('.project-active', {
         loop: true, // Enables looping
         navigation: {

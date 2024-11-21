@@ -3,11 +3,12 @@ import about from "@/assets/json/aboutus.json";
 import { onMounted } from "vue";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import image from "../../assets/logo.png";
 
 onMounted(() => {
     AOS.init({
         duration: 600, // Animation duration in milliseconds
-        once: false,   // Allow animations to repeat on scroll
+        once: false, // Allow animations to repeat on scroll
         easing: "ease-in-out", // Smooth animation easing
         anchorPlacement: "top-bottom", // Specifies animation start point
     });
@@ -16,20 +17,21 @@ onMounted(() => {
 const data = about;
 </script>
 
-
 <template>
     <section
-        className="about-area pt-120 pb-120 rounded-sm"
+        className="about-area pt-120 pb-120 rounded-sm tw-mb-10 "
         class="about-area"
         id="about-area"
         data-aos-anchor-placement="top-bottom"
     >
-        <div class="container custom-container">
-            <div class="about-inner">
-                <div class="row align-items-center justify-content-center">
-                    <div class="col-46 order-0 order-lg-2">
+        <div class="container custom-container ">
+            <div class="about-inner  tw-rounded-1/2">
+                <div
+                    class="row align-items-center justify-content-center "
+                >
+                    <div class="col-46 order-0 order-lg-2" data-aos="fade-left">
                         <div class="about-img text-end">
-                            <img src="assets/img/images/about_img.jpg" alt="" />
+                            <img src="assets/logo2.jpg" alt="" class="tw-w-[800px]" />
                         </div>
                     </div>
                     <div class="col-54">
@@ -39,7 +41,9 @@ const data = about;
                                 data-aos="zoom-out-up"
                                 data-aos-duration="300"
                             >
-                                <span class="sub-title">About Company</span>
+                                <span class=""
+                                    >About Company</span
+                                >
                                 <h2 class="title">
                                     {{ data[0].title }}
                                 </h2>

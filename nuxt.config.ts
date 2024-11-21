@@ -1,10 +1,13 @@
 export default defineNuxtConfig({
   compatibilityDate: "2024-04-03",
   devtools: { enabled: true },
+
   // plugins: [
   //   { src: 'plugins/external-scripts.js', mode: 'client' },
   //   { src: 'plugins/external-style.js', mode: 'client' },
   // ],
+  css: ['~/assets/css/main.css'],
+
   app: {
     head: {
       htmlAttrs: {
@@ -81,9 +84,11 @@ export default defineNuxtConfig({
         {rel: 'stylesheet', href:"css/responsive.css"}
       ]
     },
-    
+
   },
+
   ssr:true,
+
   // css : [
   //   "@/assets/css/bootstrap.min.css",
   //   "@/assets/css/animate.min.css",
@@ -96,12 +101,6 @@ export default defineNuxtConfig({
   //   "@/assets/css/style.css",
   //   "@/assets/css/responsive.css"
   //   ],
-    postcss: {
-      plugins: {
-        autoprefixer: {},
-        cssnano: { preset: 'default' }
-      }
-    },
   // vite: {
   //   build: {
   //     sourcemap: false,
@@ -113,4 +112,12 @@ export default defineNuxtConfig({
   //     },
   //   },
   // },
+  postcss: {
+    plugins: {
+      tailwindcss: {},
+      autoprefixer: {},
+    },
+  },
+
+  modules: ['@nuxtjs/tailwindcss'],
 });
