@@ -41,7 +41,7 @@ const data = about;
                                 data-aos="zoom-out-up"
                                 data-aos-duration="300"
                             >
-                                <span class=""
+                                <span class="tw-font-bold tw-text-2xl"
                                     >About Company</span
                                 >
                                 <h2 class="title">

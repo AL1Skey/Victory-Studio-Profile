@@ -1,6 +1,6 @@
 <template>
     <section
-        class="project-area tw-rounded-l-full tw-bg-gradient-to-r tw-from-blue-800 tw-via-purple-800 tw-to-pink-500"
+        class="project-area md:tw-rounded-l-full tw-bg-gradient-to-r tw-from-blue-800 tw-via-purple-800 tw-to-pink-500"
         id="project-area"
     >
         <div class="container">
@@ -24,19 +24,12 @@
                                 class="btn"
                                 >Contact Us <span></span
                             ></a>
-                            <!-- <div class="project-nav">
-                <button class="swiper-button-prev" aria-label="prev"></button>
-                <button class="swiper-button-next" aria-label="next"></button>
-              </div> -->
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-8">
                     <div class="project-item-wrap">
-                        <div
-                            class="swiper-container project-active tw-h-400"
-                            data-aos="fade-left"
-                        >
+                        <div class="project-active" data-aos="fade-left">
                             <div class="swiper-wrapper">
                                 <div class="swiper-slide" v-for="i in data">
                                     <div class="project-item">
@@ -44,6 +37,7 @@
                                             <img
                                                 :src="`/images/${i.image}`"
                                                 :alt="i.title"
+                                                class="tw-h-[400px] hover:tw-scale-105 tw-bg-contain tw-bg-no-repeat tw-outline tw-outline-4 tw-outline-purple-300 hover:tw-opacity-60"
                                             />
                                         </a>
                                     </div>
