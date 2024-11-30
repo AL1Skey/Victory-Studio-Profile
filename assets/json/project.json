@@ -3,30 +3,33 @@
         "image": "2.png",
         "title": "Project 1",
         "description": "This is the text for project 1",
-        "url": "https://iaajofficial.com/"
+        "link" : "https://pintarlabs.web.app/"
+
     },
     {
         "image": "3.png",
         "title": "Project 1",
         "description": "This is the text for project 1",
-        "url": "https://iaajofficial.com/"
+        "link" : "https://zainufirdaus.web.app/"
+
     },
     {
         "image": "4.png",
         "title": "Project 1",
         "description": "This is the text for project 1",
-        "url": "https://iaajofficial.com/"
+        "link" : "https://iaajofficial.com/"
     },
     {
         "image": "1.png",
         "title": "Project 1",
         "description": "This is the text for project 1",
-        "url": "https://iaajofficial.com/"
+        "link" : "https://topazmaritime.co.id/"
+
     },
     {
         "image": "5.png",
         "title": "Project 1",
         "description": "This is the text for project 1",
-        "url": "https://iaajofficial.com/"
+        "link" : "https://mts-pesri-kendari.sch.id/login"
     }
 ]

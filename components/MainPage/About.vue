@@ -19,7 +19,7 @@ const data = about;
 
 <template>
     <section
-        className="about-area pt-120 pb-120 rounded-sm tw-mb-10 "
+        className="about-area pt-120 pb-120 rounded-sm tw-mb-10  "
         class="about-area"
         id="about-area"
         data-aos-anchor-placement="top-bottom"
@@ -31,7 +31,7 @@ const data = about;
                 >
                     <div class="col-46 order-0 order-lg-2" data-aos="fade-left">
                         <div class="about-img text-end">
-                            <img src="assets/logo2.jpg" alt="" class="tw-w-[800px]" />
+                            <img src="assets/logo2.png" alt="" class="tw-w-[800px]" />
                         </div>
                     </div>
                     <div class="col-54">

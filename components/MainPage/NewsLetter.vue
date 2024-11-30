@@ -17,7 +17,7 @@ onMounted(() => {
 <template>
 <section class="newsletter-area pt-110 pb-120" data-aos="fade-up"
 data-aos-anchor-placement="center-bottom">
-      <div class="container">
+      <!-- <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-6">
             <div class="section-title text-center mb-80">
@@ -41,7 +41,7 @@ data-aos-anchor-placement="center-bottom">
             </div>
           </div>
         </div>
-      </div>
+      </div> -->
       <div class="newsletter-shape-wrap">
         <img
           src="assets/img/images/newsletter_bg_shape.png"

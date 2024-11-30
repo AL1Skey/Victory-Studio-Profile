@@ -1,51 +1,88 @@
 <template>
     <section
-        class="project-area md:tw-rounded-l-full tw-bg-gradient-to-r tw-from-blue-800 tw-via-purple-800 tw-to-pink-500"
+        class="project-area md:tw-rounded-l-full tw-bg-blue-950"
         id="project-area"
     >
-        <div class="container">
+        <div class="container tw-h-full">
             <div class="row align-items-center">
                 <div class="col-xl-4">
                     <div class="project-content">
                         <div
-                            class="section-title white-title mb-30"
+                            class="section-title white-title"
                             data-aos="fade-right"
                         >
                             <span class="sub-title">Our Complete Craft</span>
-                            <h2 class="title">{{ preproject[0].title }}</h2>
+                            <h2 class="title">{{ preproject[0]?.title }}</h2>
                         </div>
-                        <p data-aos="fade-right ">
-                            {{ preproject[0].description }}
+                        <p data-aos="fade-right">
+                            {{ preproject[0]?.description }}
                         </p>
                         <div class="content-bottom">
                             <a
                                 data-aos="fade-right"
                                 href="https://api.whatsapp.com/send?phone=6281930456886&text=Halo%20saya%20tertarik%20dengan%20jasa%20pembuatan%20website."
                                 class="btn"
-                                >Contact Us <span></span
-                            ></a>
+                            >
+                                Contact Us <span></span>
+                            </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-8">
-                    <div class="project-item-wrap">
-                        <div class="project-active" data-aos="fade-left">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide" v-for="i in data">
-                                    <div class="project-item">
-                                        <a :href="i.url" class="project-img">
-                                            <img
-                                                :src="`/images/${i.image}`"
-                                                :alt="i.title"
-                                                class="tw-h-[400px] hover:tw-scale-105 tw-bg-contain tw-bg-no-repeat tw-outline tw-outline-4 tw-outline-purple-300 hover:tw-opacity-60"
-                                            />
-                                        </a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <swiper
+                    :navigation="true"
+                    :modules="[Navigation]"
+                    class="mySwiper tw-w-[1000px] tw-rounded-3xl tw-items-center"
+                    data-aos="fade-left"
+                >
+                    <swiper-slide>
+                        <a href="https://pintarlabs.web.app/">
+                            <img
+                                src="assets/2.png"
+                                alt=""
+                                class="tw-w-[1000px]"
+                            />
+                        </a>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <a href="https://topazmaritime.co.id/">
+                            <img
+                                src="assets/1.png"
+                                alt=""
+                                class="tw-w-[1000px]"
+                            />
+                        </a>
+                    </swiper-slide>
+                    <swiper-slide>
+                        <a href="https://mts-pesri-kendari.sch.id/">
+                            <img
+                                src="assets/5.png"
+                                alt=""
+                                class="tw-w-[1000px]"
+                            />
+                        </a>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <a href="https://zainufirdaus.web.app/">
+                            <img
+                                src="assets/3.png"
+                                alt=""
+                                class="tw-w-[1000px]"
+                            />
+                        </a>
+                    </swiper-slide>
+
+                    <swiper-slide>
+                        <a href="https://iaajofficial.com/">
+                            <img
+                                src="assets/4.png"
+                                alt=""
+                                class="tw-w-[1000px]"
+                            />
+                        </a>
+                    </swiper-slide>
+                </swiper>
             </div>
         </div>
         <div class="project-shape-wrap">
@@ -64,47 +101,84 @@
 </template>
 
 <script lang="ts">
+import { onMounted } from "vue";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { register } from "swiper/element/bundle";
-import Swiper from "swiper";
-import { onMounted } from "vue";
+import { Navigation } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/vue";
+import "swiper/css";
+import "swiper/css/navigation";
+
 import projecttext from "@/assets/json/projecttext.json";
 import project from "@/assets/json/project.json";
 
-register();
-
 export default {
+    components: {
+        Swiper,
+        SwiperSlide,
+    },
     setup() {
         const data = project;
         const preproject = projecttext;
 
         onMounted(() => {
+            // Initialize AOS library
             AOS.init({
-                duration: 600, // Animation duration in milliseconds
-                once: false, // Allow animations to repeat on scroll
-                easing: "ease-in-out", // Smooth animation easing
-                anchorPlacement: "top-bottom", // Specifies animation start point
-            });
-            const swiper = new Swiper(".project-active", {
-                loop: true, // Enables looping
-                navigation: {
-                    nextEl: ".swiper-button-next",
-                    prevEl: ".swiper-button-prev",
-                },
-                slidesPerView: 4,
-                spaceBetween: 230,
-                autoplay: {
-                    delay: 2500,
-                    disableOnInteraction: false,
-                },
+                duration: 600,
+                once: false,
+                easing: "ease-in-out",
+                anchorPlacement: "top-bottom",
             });
         });
 
         return {
             data,
             preproject,
+            Navigation,
         };
     },
 };
 </script>
+
+<style scoped>
+/* Tambahkan styling kustom jika diperlukan */
+</style>
+
+<!-- <template>
+    <swiper
+        :navigation="true"
+        :modules="modules"
+        class="mySwiper tw-bg-red-500 tw-w-[1000px] "
+    >
+        <swiper-slide><img src="assets/1.png" alt=""  /> </swiper-slide>
+        <swiper-slide><img src="assets/2.png" alt="" /></swiper-slide>
+        <swiper-slide><img src="assets/3.png" alt="" /></swiper-slide>
+        <swiper-slide><img src="assets/4.png" alt="" /></swiper-slide>
+        <swiper-slide><img src="assets/5.png" alt="" /></swiper-slide>
+    </swiper>
+</template>
+<script>
+
+// Import Swiper Vue.js components
+import { Swiper, SwiperSlide } from "swiper/vue";
+
+// Import Swiper styles
+import "swiper/css";
+
+import "swiper/css/navigation";
+
+// import required modules
+import { Navigation } from "swiper/modules";
+
+export default {
+    components: {
+        Swiper,
+        SwiperSlide,
+    },
+    setup() {
+        return {
+            modules: [Navigation],
+        };
+    },
+};
+</script> -->

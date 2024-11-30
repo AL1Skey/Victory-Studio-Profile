@@ -21,10 +21,10 @@
                     <li><a href="#">Home</a></li>
                     <li><a href="#about-area">About Us</a></li>
                     <li>
-                      <a href="#project-area">Portfolio Details</a>
+                      <a href="#project-area">Portfolio </a>
                     </li>
                     <li>
-                      <a href="#services-area">Services Details</a>
+                      <a href="#services-area">Services</a>
                     </li>
                     <li><a href="#footer-area">Contact Us</a></li>
 
@@ -52,7 +52,7 @@
                 <div class="menu-outer">
                   <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
                 </div>
-              
+
               </nav>
             </div>
             <div class="menu-backdrop"></div>
