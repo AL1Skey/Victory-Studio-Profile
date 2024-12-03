@@ -5,19 +5,22 @@ import "aos/dist/aos.css";
 
 onMounted(() => {
     AOS.init({
-        duration: 600, // Animation duration in milliseconds
-        once: false, // Allow animations to repeat on scroll
-        easing: "ease-in-out", // Smooth animation easing
-        anchorPlacement: "top-bottom", // Specifies animation start point
+        duration: 600, // Durasi animasi dalam milidetik
+        once: false, // Mengizinkan animasi diulang saat scroll
+        easing: "ease-in-out", // Easing untuk animasi yang halus
+        anchorPlacement: "top-bottom", // Posisi awal animasi
     });
 });
 </script>
 
 <template>
-    <section class="services-area pt-35 pb-95" id="services-area">
+    <section class="services-area pt-35 pb-95 tw-pt-36" id="services-area">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10" data-aos="zoom-in"
+                <!-- Card 1: UI/UX Design -->
+                <div
+                    class="col-xl-3 col-lg-4 col-md-6 col-sm-10"
+                    data-aos="zoom-in"
                 >
                     <div
                         class="services-item wow fadeInUp"
@@ -26,25 +29,34 @@ onMounted(() => {
                         <div class="services-icon">
                             <img
                                 src="assets/img/icon/services_icon01.png"
-                                alt=""
+                                alt="UI/UX Design Icon"
                             />
                         </div>
-                        <div class="services-content" data-aos="zoom-in" data-aos-duration="300"
->
-                            <h4 class="title" >
-                                <a href="services-details.html">UIUX Design</a>
+                        <div
+                            class="services-content"
+                            data-aos="zoom-in"
+                            data-aos-duration="300"
+                        >
+                            <h4 class="title">
+                                <a href="services-details.html"
+                                    >Desain UI/UX Profesional</a
+                                >
                             </h4>
-                            <p >
-                                Kami menyediakan layanan desain UI/UX yang
-                                komprehensif untuk menciptakan pengalaman
-                                pengguna yang intuitif dan menarik. Tim kami
-                                memastikan bahwa produk Anda tidak hanya menarik
-                                secara visual tetapi juga mudah digunakan.
+                            <p>
+                                Kami menyediakan solusi desain UI/UX yang
+                                inovatif untuk menciptakan pengalaman pengguna
+                                yang intuitif dan menarik. Produk Anda akan
+                                memiliki desain yang estetis, mudah digunakan,
+                                dan memberikan dampak positif.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10" data-aos="zoom-in"
+
+                <!-- Card 2: Company Profile -->
+                <div
+                    class="col-xl-3 col-lg-4 col-md-6 col-sm-10"
+                    data-aos="zoom-in"
                 >
                     <div
                         class="services-item wow fadeInUp"
@@ -52,28 +64,35 @@ onMounted(() => {
                     >
                         <div class="services-icon">
                             <img
-                                src="assets/img/icon/services_icon02.png"
-                                alt=""
+                                src="assets/img/icon/inner_services_icon02.png"
+                                alt="Company Profile Icon"
                             />
                         </div>
-                        <div class="services-content" data-aos="zoom-in" data-aos-duration="400"
+                        <div
+                            class="services-content"
+                            data-aos="zoom-in"
+                            data-aos-duration="400"
                         >
                             <h4 class="title">
                                 <a href="services-details.html"
-                                    >Product Design</a
+                                    >Website Company Profile</a
                                 >
                             </h4>
                             <p>
-                                Kami menawarkan layanan desain produk yang
-                                inovatif dan fungsional. Tim kami bekerja sama
-                                dengan Anda untuk mengembangkan produk yang
-                                tidak hanya memenuhi kebutuhan pasar tetapi juga
-                                memberikan nilai tambah bagi pengguna.
+                                Tingkatkan citra bisnis Anda dengan profil
+                                perusahaan yang elegan dan profesional. Kami
+                                menciptakan materi yang mencerminkan identitas
+                                brand Anda, memperkuat kepercayaan klien dan
+                                mendorong pertumbuhan bisnis.
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10" data-aos="zoom-in"
+
+                <!-- Card 3: Custom Website -->
+                <div
+                    class="col-xl-3 col-lg-4 col-md-6 col-sm-10"
+                    data-aos="zoom-in"
                 >
                     <div
                         class="services-item wow fadeInUp"
@@ -81,28 +100,35 @@ onMounted(() => {
                     >
                         <div class="services-icon">
                             <img
-                                src="assets/img/icon/services_icon03.png"
-                                alt=""
+                                src="assets/img/icon/h3_services_icon02.png"
+                                alt="Custom Website Icon"
                             />
                         </div>
-                        <div class="services-content" data-aos="zoom-in" data-aos-duration="500"
+                        <div
+                            class="services-content"
+                            data-aos="zoom-in"
+                            data-aos-duration="500"
                         >
                             <h4 class="title">
                                 <a href="services-details.html"
-                                    >Website Design</a
+                                    >Pembuatan Website Kustom</a
                                 >
                             </h4>
-                            <p >
-                                Kami menyediakan layanan desain website yang
-                                responsif dan menarik. Tim kami memastikan bahwa
-                                website Anda tidak hanya terlihat profesional
-                                tetapi juga memberikan pengalaman pengguna yang
-                                optimal di berbagai perangkat.
+                            <p>
+                                Kami menghadirkan layanan pembuatan website
+                                responsif dan modern. Desain kami memastikan
+                                pengalaman pengguna yang optimal di berbagai
+                                perangkat dan memastikan bahwa website akan
+                                menarik perhatian pengunjung
                             </p>
                         </div>
                     </div>
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-6 col-sm-10" data-aos="zoom-in"
+
+                <!-- Card 4: Mobile App -->
+                <div
+                    class="col-xl-3 col-lg-4 col-md-6 col-sm-10"
+                    data-aos="zoom-in"
                 >
                     <div
                         class="services-item wow fadeInUp"
@@ -110,24 +136,26 @@ onMounted(() => {
                     >
                         <div class="services-icon">
                             <img
-                                src="assets/img/icon/services_icon04.png"
-                                alt=""
+                                src="assets/img/icon/edit.png"
+                                alt="Mobile App Icon"
                             />
                         </div>
-                        <div class="services-content" data-aos="zoom-in" data-aos-duration="600"
+                        <div
+                            class="services-content"
+                            data-aos="zoom-in"
+                            data-aos-duration="600"
                         >
                             <h4 class="title">
                                 <a href="services-details.html"
-                                    >Branding Design</a
+                                    >Pengembangan Aplikasi Mobile</a
                                 >
                             </h4>
                             <p>
-                                Kami menawarkan layanan desain branding yang
-                                membantu Anda menciptakan identitas merek yang
-                                kuat dan konsisten. Tim kami bekerja untuk
-                                memastikan bahwa merek Anda memiliki daya tarik
-                                visual yang kuat dan dapat dikenali di berbagai
-                                platform.
+                                Kami menawarkan layanan pengembangan aplikasi
+                                mobile yang intuitif dan inovatif. Fokus kami
+                                adalah menciptakan aplikasi dengan pengalaman
+                                pengguna yang luar biasa. sehingga ramah untuk
+                                digunakan dan lebih efesient
                             </p>
                         </div>
                     </div>

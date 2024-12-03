@@ -7,7 +7,7 @@ import image from "../../assets/logo.png";
 
 onMounted(() => {
     AOS.init({
-        duration: 600, // Animation duration in milliseconds
+        duration: 600, 
         once: false, // Allow animations to repeat on scroll
         easing: "ease-in-out", // Smooth animation easing
         anchorPlacement: "top-bottom", // Specifies animation start point
@@ -31,7 +31,7 @@ const data = about;
                 >
                     <div class="col-46 order-0 order-lg-2" data-aos="fade-left">
                         <div class="about-img text-end">
-                            <img src="assets/logo2.png" alt="" class="tw-w-[800px]" />
+                            <img src="assets/logo1.jpg" alt="" class="tw-w-[1200px]" />
                         </div>
                     </div>
                     <div class="col-54">

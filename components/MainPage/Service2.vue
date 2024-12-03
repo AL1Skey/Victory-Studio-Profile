@@ -19,29 +19,13 @@ onMounted(() => {
         <div class="container">
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-6 col-md-9 order-0 order-lg-2">
-                    <div class="developr-img">
+                    <div class="developr-img tw-m-4">
                         <img
-                            src="assets/developer_img.png"
+                            src="assets/logo2.jpg"
                             alt=""
                             data-aos="fade-left"
+                            class="tw-h-[500px]"
                         />
-
-                        <div class="work-experience-wrap" data-aos="fade-left">
-                            <h2 class="count">
-                                <span class="odometer" data-count="18"></span>+
-                            </h2>
-                            <p>Years Of Experience</p>
-                        </div>
-
-                        <div
-                            class="project-completed-wrap"
-                            data-aos="fade-left"
-                        >
-                            <h2 class="count">
-                                <span class="odometer" data-count="5"></span>K+
-                            </h2>
-                            <p>Have Faithfully Completed Projects Till Date</p>
-                        </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
@@ -50,22 +34,32 @@ onMounted(() => {
                             class="section-title title-style-two mb-20"
                             data-aos="fade-right"
                         >
-                            <span class="sub-title">What We Do</span>
-                            <h2 class="title">
-                                Kami merancang dan mengembangkan aplikasi web
-                                dan mobile untuk klien kami di seluruh dunia
-                            </h2>
+                            <p class="tw-font-bold tw-text-2xl">
+                                Tahukah anda, bahwa tingkat kepercayaan
+                                pelanggan terhadap suatu perusahaan atau
+                                organisasi lebih meningkat jika memiliki website
+                            </p>
                         </div>
 
-                        <p data-aos="fade-right">
-                            Kami adalah tim pengembang web dan mobile yang
-                            berdedikasi untuk membantu bisnis Anda tumbuh. Kami
-                            menawarkan layanan pengembangan web dan mobile yang
-                            komprehensif untuk membantu Anda mencapai tujuan
-                            bisnis Anda. Dari desain web hingga pengembangan
-                            aplikasi mobile, kami memiliki semua yang Anda
-                            butuhkan untuk mengembangkan bisnis Anda secara
-                            online.
+                        <p data-aos="fade-right tw-text-justify">
+                            Mungkin anda pernah berpikir dapat membangun brand
+                            dari microsite atau social media. Namun tetap saja
+                            tidak maksimal. Karena sosial media tidak bisa
+                            mewakili brand anda. Selain itu, dengan memiliki
+                            website akan mengoptimalkan promosi. Website akan
+                            memperkenalkan usaha yang anda jalani ke seluruh
+                            dunia kapanpun, dimanapun. Website seperti alat
+                            marketing yang tak henti-hentinya berpromosi,
+                            meskipun anda sedang tidur. Kami mengerti akan hal
+                            itu, dan kami hadir untuk membantu mengembangkan
+                            usaha anda. Paket jasa pembuatan website kami adalah
+                            paket all in one. Anda tidak perlu memikirkan
+                            desain, domain, hosting, atau teknik pembuatan dan
+                            perawatan website. Semua sudah dirangkum dalam paket
+                            yang lengkap. Cukup berikan kami materi untuk
+                            website anda dalam bentuk company profile, brosur
+                            atau apapun mengenai usaha anda. Kami akan buatkan
+                            websitenya, merawat dan mengoptimalkannya.
                         </p>
                         <div class="developr-social">
                             <!-- <ul class="list-wrap">

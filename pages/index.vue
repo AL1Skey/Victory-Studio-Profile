@@ -3,6 +3,9 @@ import { ref, onMounted, defineExpose } from "vue";
 import { BsWhatsapp } from "@kalimahapps/vue-icons";
 const isMounted = ref(false);
 
+// State untuk menampilkan popup
+const showPopup = ref(false);
+
 onMounted(() => {
     isMounted.value = true;
 });
@@ -16,8 +19,9 @@ defineExpose({ isMounted });
             <div class="loader-container">
                 <div class="loader-icon">
                     <img
-                        src="/public/images/Logo/Artboard 1.png"
+                        src="/public/images/Logo/logo.png"
                         alt="Preloader"
+                        class="tw-ml-5"
                     />
                 </div>
             </div>
@@ -30,19 +34,27 @@ defineExpose({ isMounted });
     <div class="mouseCursor cursor-inner"><span>Drag</span></div>
     <!-- Custom-cursor-end -->
 
-    <div class="tw-fixed tw-bottom-5 tw-right-5 tw-z-[1000]">
-        <a
-            href="https://api.whatsapp.com/send/?phone=081930456886&text=Halo+saya+ingin+bertanya&type=phone_number&app_absent=0"
-            target="_blank"
-            rel="noopener noreferrer"
-        >
-            <button
-                class="tw-bg-green-600 tw-mb-5 tw-rounded-full tw-mr-20 tw-flex tw-items-center tw-justify-center tw-w-20 tw-h-20 hover:tw-bg-green-700"
-                aria-label="WhatsApp"
+    <div class="tw-fixed tw-bottom-5 tw-right-5 tw-z-[1000] tw-mr-20 tw-mb-4">
+        <div class="tw-relative">
+            <!-- Popup -->
+
+
+            <!-- Button -->
+            <a
+                href="https://api.whatsapp.com/send/?phone=081930456886&text=Halo+saya+ingin+bertanya&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noopener noreferrer"
             >
-                <BsWhatsapp class="tw-text-white tw-w-8 tw-h-8" />
-            </button>
-        </a>
+                <button
+                    class="tw-bg-green-600 tw-flex tw-rounded-full tw-items-center tw-justify-center tw-w-14 tw-h-14 hover:tw-bg-green-700"
+                    aria-label="WhatsApp"
+                    @mouseover="showPopup = true"
+                    @mouseleave="showPopup = false"
+                >
+                    <BsWhatsapp class="tw-text-white tw-w-8 tw-h-8" />
+                </button>
+            </a>
+        </div>
     </div>
 
     <div

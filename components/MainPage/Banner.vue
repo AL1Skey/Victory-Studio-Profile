@@ -34,6 +34,7 @@ onMounted(() => {
                         <img
                             src="assets/img/banner/banner_img.png"
                             alt="Banner Image"
+
                         />
                     </div>
                 </div>
@@ -72,7 +73,7 @@ onMounted(() => {
                                     data-aos="fade-up"
                                     data-aos-duration="1200"
                                 >
-                                    Jasa Pembuatan Website Profesional
+                                 Jasa Pembuatan Website Profesional
                                 </h2>
                             </SwiperSlide>
                         </Swiper>

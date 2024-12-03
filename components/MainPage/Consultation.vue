@@ -2,6 +2,7 @@
 import { onMounted } from "vue";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { MailIcon, PhoneIcon } from "lucide-vue-next";
 
 onMounted(() => {
     AOS.init({
@@ -19,58 +20,40 @@ onMounted(() => {
             <div class="row align-items-center">
                 <div class="col-lg-7">
                     <div class="consultation-content">
-                        <div
-                            class="section-title mb-25"
-                            data-aos="zoom-in-right"
+                        <h1
+                            class="tw-text-3xl tw-font-bold tw-text-blue-950 tw-mb-5"
                         >
-                            <img
-                                src="assets/img/icon/consultation_icon01.png"
-                                alt=""
-                            />
-                            <span class="sub-title">95% Accuracy</span>
-                            <h2 class="title">
-                                Agensi Pemasaran Digital Terbaik di Dunia
-                            </h2>
-                        </div>
+                            Kami adalah tim pengembang profesional yang
+                            berdedikasi untuk membantu bisnis Anda tumbuh
+                            melalui teknologi.
+                        </h1>
                         <p data-aos="zoom-in-right">
-                            Kami adalah agensi pemasaran digital yang
-                            berdedikasi untuk membantu bisnis Anda tumbuh. Kami
-                            menawarkan layanan pemasaran digital yang
-                            komprehensif untuk membantu Anda mencapai tujuan
-                            bisnis Anda. Dari desain web hingga strategi
-                            pemasaran konten, kami memiliki semua yang Anda
-                            butuhkan untuk mengembangkan bisnis Anda secara
-                            online.
+                            Kami menawarkan layanan pengembangan aplikasi web
+                            dan mobile yang komprehensif untuk memastikan bisnis
+                            Anda dapat diakses dengan mudah di berbagai
+                            platform. Dari pembuatan aplikasi yang responsif dan
+                            user-friendly hingga solusi mobile yang inovatif,
+                            kami menyediakan semua yang Anda butuhkan untuk
+                            menghadirkan pengalaman digital yang optimal bagi
+                            pengguna Anda. Dengan pendekatan yang terfokus pada
+                            kualitas dan fungsionalitas, kami membantu Anda
+                            menciptakan aplikasi yang tidak hanya menarik secara
+                            visual tetapi juga andal dan efisien.
                         </p>
                         <div class="consultation-list">
                             <ul class="list-wrap">
                                 <li data-aos="zoom-in-right">
-                                    <div class="icon">
-                                        <img
-                                            src="assets/img/icon/consultation_icon02.png"
-                                            alt=""
-                                        />
-                                        <span>12x</span>
-                                    </div>
-                                    <div class="content">
-                                        <h6 class="title">
-                                            Faster Order Processing
-                                        </h6>
-                                    </div>
+                                    <PhoneIcon />
+
+                                    <h6 class="title tw-ml-2">
+                                        0819-3045-6886
+                                    </h6>
                                 </li>
-                                <li data-aos="zoom-in-right">
-                                    <div class="icon">
-                                        <img
-                                            src="assets/img/icon/consultation_icon03.png"
-                                            alt=""
-                                        />
-                                        <span>95%</span>
-                                    </div>
-                                    <div class="content">
-                                        <h6 class="title">
-                                            Processing Accuracy
-                                        </h6>
-                                    </div>
+                                <li data-aos="zoom-in-right ">
+                                    <MailIcon />
+                                    <h6 class="title tw-ml-2">
+                                        hello@victorystudio.co.id
+                                    </h6>
                                 </li>
                             </ul>
                         </div>
