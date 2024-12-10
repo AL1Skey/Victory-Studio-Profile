@@ -46,7 +46,7 @@
                 <div class="close-btn"><i class="fas fa-times"></i></div>
                 <div class="nav-logo">
                   <a href="#"
-                    ><img src="assets/img/logo/logo.png" alt="Logo"
+                    ><img src="/public/images/Logo/Artboard 1.png" alt="Logo"
                   /></a>
                 </div>
                 <div class="menu-outer">
@@ -135,7 +135,7 @@
                         </li>
                       </ul>
                       <div class="lats-chat">
-                        <a href="contact.html">Lat’s Chat</a>
+                        <a href="https://api.whatsapp.com/send?phone=6281930456886&text=Halo%20saya%20tertarik%20dengan%20jasa%20pembuatan%20website.">Let’s Chat</a>
                       </div>
                     </div>
                   </div>
@@ -145,7 +145,7 @@
                         <h4 class="title">
                           One of Our <span>Best Ongoing</span> Projects
                         </h4>
-                        <a href="project-details.html" class="btn"
+                        <a href="#project-area" class="btn"
                           >Details <span></span
                         ></a>
                       </div>
@@ -171,12 +171,12 @@
                   <p>
                     We offer solutions for businesses of all sizes. For
                     questions about our plans and products,, contact our team of
-                    experts. <a href="contact.html">Get in touch</a>
+                    experts. <a href="https://api.whatsapp.com/send?phone=6281930456886&text=Halo%20saya%20tertarik%20dengan%20jasa%20pembuatan%20website.">Get in touch</a>
                   </p>
                 </div>
                 <div class="content-bottom">
-                  <a href="contact.html">Support</a>
-                  <a href="contact.html">Documentation</a>
+                  <a href="https://api.whatsapp.com/send?phone=6281930456886&text=Halo%20saya%20tertarik%20dengan%20jasa%20pembuatan%20website.">Support</a>
+                  <a href="https://api.whatsapp.com/send?phone=6281930456886&text=Halo%20saya%20tertarik%20dengan%20jasa%20pembuatan%20website.">Documentation</a>
                 </div>
               </div>
             </div>

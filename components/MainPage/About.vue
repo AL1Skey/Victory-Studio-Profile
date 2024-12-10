@@ -93,7 +93,7 @@ const data = about;
                             >
                                 <span>{{ data[0].additional_info }}</span>
                                 <div class="read-more-btn">
-                                    <a href="about-us.html" class="btn"
+                                    <a href="https://api.whatsapp.com/send?phone=6281930456886&text=Halo%20saya%20tertarik%20dengan%20jasa%20pembuatan%20website." class="btn"
                                         >Contact Us <span></span
                                     ></a>
                                 </div>

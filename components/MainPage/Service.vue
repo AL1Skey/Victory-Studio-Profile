@@ -5,10 +5,10 @@ import "aos/dist/aos.css";
 
 onMounted(() => {
     AOS.init({
-        duration: 600, // Durasi animasi dalam milidetik
-        once: false, // Mengizinkan animasi diulang saat scroll
-        easing: "ease-in-out", // Easing untuk animasi yang halus
-        anchorPlacement: "top-bottom", // Posisi awal animasi
+        duration: 600,
+        once: false,
+        easing: "ease-in-out",
+        anchorPlacement: "top-bottom",
     });
 });
 </script>
@@ -38,7 +38,10 @@ onMounted(() => {
                             data-aos-duration="300"
                         >
                             <h4 class="title">
-                                <a href="services-details.html"
+                                <a
+                                    href="https://api.whatsapp.com/send/?phone=081930456886&text=Halo+saya+ingin+bertanya+tentang+pembuatan+design+UI/UX&type=phone_number&app_absent=0"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     >Desain UI/UX Profesional</a
                                 >
                             </h4>
@@ -74,7 +77,10 @@ onMounted(() => {
                             data-aos-duration="400"
                         >
                             <h4 class="title">
-                                <a href="services-details.html"
+                                <a
+                                    href="https://api.whatsapp.com/send/?phone=081930456886&text=Halo+saya+ingin+bertanya+tentang+pembuatan+company+profile&type=phone_number&app_absent=0"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     >Website Company Profile</a
                                 >
                             </h4>
@@ -110,8 +116,11 @@ onMounted(() => {
                             data-aos-duration="500"
                         >
                             <h4 class="title">
-                                <a href="services-details.html"
-                                    >Pembuatan Website Kustom</a
+                                <a
+                                    href="https://api.whatsapp.com/send/?phone=081930456886&text=Halo+saya+ingin+bertanya+tentang+pembuatan+website&type=phone_number&app_absent=0"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    >Website Custom</a
                                 >
                             </h4>
                             <p>
@@ -146,7 +155,10 @@ onMounted(() => {
                             data-aos-duration="600"
                         >
                             <h4 class="title">
-                                <a href="services-details.html"
+                                <a
+                                    href="https://api.whatsapp.com/send/?phone=081930456886&text=Halo+saya+ingin+bertanya+tentang+pembuatan+aplikasi+mobile&type=phone_number&app_absent=0"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
                                     >Pengembangan Aplikasi Mobile</a
                                 >
                             </h4>

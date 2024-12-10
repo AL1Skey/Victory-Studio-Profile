@@ -10,6 +10,12 @@ export default defineNuxtConfig({
 
     app: {
         head: {
+            // script: [
+            //     {
+            //         src: "https://unpkg.com/smtp.js/dist/smtp.min.js",
+            //         type: "text/javascript",
+            //     },
+            // ],
             htmlAttrs: {
                 class: "no-js",
             },

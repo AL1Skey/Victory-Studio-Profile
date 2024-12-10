@@ -31,5 +31,11 @@
         "title": "Project 1",
         "description": "This is the text for project 1",
         "link" : "https://mts-pesri-kendari.sch.id/login"
+    },
+    {
+        "image": "7.png",
+        "title": "Project 1",
+        "description": "This is the text for project 1",
+        "link" : "https://mimologistics.id/"
     }
 ]

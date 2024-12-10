@@ -1,18 +1,3 @@
-<script lang="ts" setup>
-import { onMounted } from "vue";
-import AOS from "aos";
-import "aos/dist/aos.css";
-import { MailIcon, PhoneIcon } from "lucide-vue-next";
-
-onMounted(() => {
-    AOS.init({
-        duration: 600, // Animation duration in milliseconds
-        once: false, // Allow animations to repeat on scroll
-        easing: "ease-in-out", // Smooth animation easing
-        anchorPlacement: "top-bottom", // Specifies animation start point
-    });
-});
-</script>
 
 <template>
     <section class="consultation-area pt-120 pb-120">
@@ -20,40 +5,21 @@ onMounted(() => {
             <div class="row align-items-center">
                 <div class="col-lg-7">
                     <div class="consultation-content">
-                        <h1
-                            class="tw-text-3xl tw-font-bold tw-text-blue-950 tw-mb-5"
-                        >
-                            Kami adalah tim pengembang profesional yang
-                            berdedikasi untuk membantu bisnis Anda tumbuh
-                            melalui teknologi.
+                        <h1 class="tw-text-3xl tw-font-bold tw-text-blue-950 tw-mb-5">
+                            Kami adalah tim pengembang profesional yang berdedikasi untuk membantu bisnis Anda tumbuh melalui teknologi.
                         </h1>
                         <p data-aos="zoom-in-right">
-                            Kami menawarkan layanan pengembangan aplikasi web
-                            dan mobile yang komprehensif untuk memastikan bisnis
-                            Anda dapat diakses dengan mudah di berbagai
-                            platform. Dari pembuatan aplikasi yang responsif dan
-                            user-friendly hingga solusi mobile yang inovatif,
-                            kami menyediakan semua yang Anda butuhkan untuk
-                            menghadirkan pengalaman digital yang optimal bagi
-                            pengguna Anda. Dengan pendekatan yang terfokus pada
-                            kualitas dan fungsionalitas, kami membantu Anda
-                            menciptakan aplikasi yang tidak hanya menarik secara
-                            visual tetapi juga andal dan efisien.
+                            Kami menawarkan layanan pengembangan aplikasi web dan mobile yang komprehensif untuk memastikan bisnis Anda dapat diakses dengan mudah di berbagai platform.
                         </p>
                         <div class="consultation-list">
                             <ul class="list-wrap">
                                 <li data-aos="zoom-in-right">
                                     <PhoneIcon />
-
-                                    <h6 class="title tw-ml-2">
-                                        0819-3045-6886
-                                    </h6>
+                                    <h6 class="title tw-ml-2">0819-3045-6886</h6>
                                 </li>
-                                <li data-aos="zoom-in-right ">
+                                <li data-aos="zoom-in-right">
                                     <MailIcon />
-                                    <h6 class="title tw-ml-2">
-                                        hello@victorystudio.co.id
-                                    </h6>
+                                    <h6 class="title tw-ml-2">hello@victorystudio.co.id</h6>
                                 </li>
                             </ul>
                         </div>
@@ -62,31 +28,23 @@ onMounted(() => {
                 <div class="col-lg-5" data-aos="flip-left">
                     <div class="consultation-form-wrap">
                         <h4 class="title">Free Consultation</h4>
-                        <form action="#">
+                        <form @submit.prevent="handleSubmit">
                             <div class="form-grp">
-                                <input type="text" placeholder="Name" />
+                                <input v-model="name" type="text" placeholder="Name" />
                             </div>
                             <div class="form-grp">
-                                <input
-                                    type="email"
-                                    placeholder="Email Address"
-                                />
+                                <input v-model="email" type="email" placeholder="Email Address" />
                             </div>
                             <div class="form-grp">
-                                <input type="text" placeholder="Phone Number" />
+                                <input v-model="phone" type="text" placeholder="Phone Number" />
                             </div>
                             <div class="form-grp">
-                                <select
-                                    id="shortBy"
-                                    name="select"
-                                    class="form-select"
-                                    aria-label="Default select example"
-                                >
+                                <select v-model="subject" id="subjectSelect" name="select" class="form-select">
                                     <option value="">Subject</option>
-                                    <option>Subject One</option>
-                                    <option>Subject Two</option>
-                                    <option>Subject Three</option>
-                                    <option>Subject Four</option>
+                                    <option value="Design UI/UX">Design UI/UX</option>
+                                    <option value="Company Profile">Company Profile</option>
+                                    <option value="Website Custom">Website Custom</option>
+                                    <option value="Aplikasi Mobile">Aplikasi Mobile</option>
                                 </select>
                             </div>
                             <button class="btn" type="submit">
@@ -97,17 +55,57 @@ onMounted(() => {
                 </div>
             </div>
         </div>
-        <div class="consultation-shape-wrap">
-            <img
-                src="assets/img/images/consultation_shape01.png"
-                alt=""
-                class="shape-one ribbonRotate"
-            />
-            <img
-                src="assets/img/images/consultation_shape02.png"
-                alt=""
-                class="shape-two float-bob-x"
-            />
-        </div>
     </section>
 </template>
+
+<script lang="ts" setup>
+import { ref } from "vue";
+
+// Data binding for form
+const name = ref('');
+const email = ref('');
+const phone = ref('');
+const subject = ref('');
+
+// Function to handle form submission
+const handleSubmit = () => {
+    // Construct the email body
+    const body = `
+        Name: ${name.value}
+        Email: ${email.value}
+        Phone: ${phone.value}
+        Subject: ${subject.value}
+    `.trim();
+
+    // Send email using backend
+    fetch('https://victorystudio.co.id/mail.php', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            name: name.value,
+            email: email.value,
+            phone: phone.value,
+            subject: subject.value,
+            message: body
+        })
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            alert('Email sent successfully!');
+        } else {
+            alert('Failed to send email.');
+        }
+    })
+    .catch(error => {
+        console.error('Error:', error);
+        alert('An error occurred while sending the email.'+error);
+    });
+};
+</script>
+
+<style scoped>
+/* Add your styles here, if needed */
+</style>

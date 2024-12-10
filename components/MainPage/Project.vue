@@ -30,14 +30,24 @@
                 </div>
                 <swiper
                     :navigation="true"
-                    :modules="[Navigation]"
+                    :autoplay="{ delay: 3000, disableOnInteraction: false }"
+                    :modules="[Navigation, Autoplay]"
                     class="mySwiper tw-w-[1000px] tw-rounded-3xl tw-items-center"
                     data-aos="fade-left"
                 >
-                    <swiper-slide>
+                    <swiper-slide >
                         <a href="https://pintarlabs.web.app/">
                             <img
                                 src="assets/2.png"
+                                alt=""
+                                class="tw-w-[1000px]"
+                            />
+                        </a>
+                    </swiper-slide>
+                    <swiper-slide >
+                        <a href="https://pintarlabs.web.app/">
+                            <img
+                                src="assets/7.png"
                                 alt=""
                                 class="tw-w-[1000px]"
                             />
@@ -82,6 +92,16 @@
                             />
                         </a>
                     </swiper-slide>
+
+                    <swiper-slide>
+                        <a href="https://risharchery.com/">
+                            <img
+                                src="assets/6.png"
+                                alt=""
+                                class="tw-w-[1000px]"
+                            />
+                        </a>
+                    </swiper-slide>
                 </swiper>
             </div>
         </div>
@@ -104,7 +124,7 @@
 import { onMounted } from "vue";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules"; // Mengimpor modul Autoplay dan Navigation
 import { Swiper, SwiperSlide } from "swiper/vue";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -122,7 +142,7 @@ export default {
         const preproject = projecttext;
 
         onMounted(() => {
-            // Initialize AOS library
+            // Inisialisasi AOS library
             AOS.init({
                 duration: 600,
                 once: false,
@@ -135,6 +155,7 @@ export default {
             data,
             preproject,
             Navigation,
+            Autoplay, // Menambahkan modul Autoplay
         };
     },
 };
@@ -143,42 +164,3 @@ export default {
 <style scoped>
 /* Tambahkan styling kustom jika diperlukan */
 </style>
-
-<!-- <template>
-    <swiper
-        :navigation="true"
-        :modules="modules"
-        class="mySwiper tw-bg-red-500 tw-w-[1000px] "
-    >
-        <swiper-slide><img src="assets/1.png" alt=""  /> </swiper-slide>
-        <swiper-slide><img src="assets/2.png" alt="" /></swiper-slide>
-        <swiper-slide><img src="assets/3.png" alt="" /></swiper-slide>
-        <swiper-slide><img src="assets/4.png" alt="" /></swiper-slide>
-        <swiper-slide><img src="assets/5.png" alt="" /></swiper-slide>
-    </swiper>
-</template>
-<script>
-
-// Import Swiper Vue.js components
-import { Swiper, SwiperSlide } from "swiper/vue";
-
-// Import Swiper styles
-import "swiper/css";
-
-import "swiper/css/navigation";
-
-// import required modules
-import { Navigation } from "swiper/modules";
-
-export default {
-    components: {
-        Swiper,
-        SwiperSlide,
-    },
-    setup() {
-        return {
-            modules: [Navigation],
-        };
-    },
-};
-</script> -->
