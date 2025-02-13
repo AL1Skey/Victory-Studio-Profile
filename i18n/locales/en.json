@@ -1,0 +1,14 @@
+{
+    "greeting": "Hello",
+    "farewell": "Goodbye",
+    "welcome": "Welcome to Victory Studio",
+    "profile": {
+        "name": "Name",
+        "age": "Age",
+        "email": "Email"
+    },
+    "errors": {
+        "not_found": "Page not found",
+        "server_error": "Internal server error"
+    }
+}

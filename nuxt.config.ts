@@ -10,12 +10,37 @@ export default defineNuxtConfig({
 
     app: {
         head: {
-            // script: [
-            //     {
-            //         src: "https://unpkg.com/smtp.js/dist/smtp.min.js",
-            //         type: "text/javascript",
-            //     },
-            // ],
+            script: [
+                {
+                    type: 'application/ld+json',
+                    innerHTML: JSON.stringify({
+                      "@context": "https://schema.org",
+                      "@type": "ProfessionalService",
+                      "name": "Victory Studio",
+                      "image": "https://jasawebsite.victorystudio.co.id/assets/img/logo.png",
+                      "@id": "",
+                      "url": "https://victorystudio.co.id",
+                      "telephone": "+6281930456886",
+                      "priceRange": "$$$",
+                      "address": {
+                        "@type": "PostalAddress",
+                        "streetAddress": "Jl. Panghulu Djaja Cimahpar",
+                        "addressLocality": "Bogor Utara",
+                        "postalCode": "16151",
+                        "addressCountry": "ID"
+                      },
+                      "geo": {
+                        "@type": "GeoCoordinates",
+                        "latitude": "-6.175392",
+                        "longitude": "106.827153"
+                      },
+                      "sameAs": [
+                        "https://victorystudio.co.id/",
+                        "https://www.linkedin.com/company/victorystudio"
+                      ]
+                    })
+                  },
+            ],
             htmlAttrs: {
                 class: "no-js",
             },
@@ -32,6 +57,9 @@ export default defineNuxtConfig({
                     name: "description",
                     content: "Jasa Pembuatan Website - Victory Studio",
                 },
+                { property: 'og:locale', content: 'en_GB' },
+                { property: 'og:locale:alternate', content: 'id_ID' },
+                { property: 'og:site_name', content: 'Victory Studio' },
                 {
                     hid: "keywords",
                     name: "keywords",
@@ -44,6 +72,7 @@ export default defineNuxtConfig({
                     content:
                         "Victory Studio, victorystudio.id, victorystudio, jasa pembuatan website, jasa pembuatan website terbaik, jasa pembuatan website murah, jasa pembuatan website profesional, jasa pembuatan website jakarta, jasa pembuatan website terpercaya, jasa pembuatan website terbaik",
                 },
+                
                 { hid: "robots", name: "robots", content: "index, follow" },
                 {
                     hid: "googlebot",
@@ -259,6 +288,9 @@ export default defineNuxtConfig({
                     property: "og:locale:alternate",
                     content: "en_FJ",
                 },
+                { rel: 'alternate', hreflang: 'x-default', href: 'https://jasawebsite.victorystudio.co.id/' },
+                { rel: 'alternate', hreflang: 'en', href: 'https://jasawebsite.victorystudio.co.id/en/' },
+                { rel: 'alternate', hreflang: 'id', href: 'https://jasawebsite.victorystudio.co.id/id/' },
             ],
 
             link: [
@@ -313,5 +345,25 @@ export default defineNuxtConfig({
         },
     },
 
-    modules: ["@nuxtjs/tailwindcss"],
+    modules: ["@nuxtjs/tailwindcss","@nuxtjs/i18n"],
+    i18n: {
+        locales: [
+          { code: 'en', iso: 'en-US', name: 'English', file: 'en.json' },
+          { code: 'id', iso: 'id-ID', name: 'Bahasa Indonesia', file: 'id.json' }
+        ],
+        defaultLocale: 'en',
+        strategy: 'prefix_except_default',
+        langDir: 'locales/',
+        // ✅ Reference the external file as a string:
+        vueI18n: './i18n.config.ts',
+        lazy: true,
+      },
+    nitro: {
+        compressPublicAssets: true,
+        static: true
+      },
+    experimental: {
+    payloadExtraction: true,
+    componentIslands: true
+      },
 });

@@ -74,37 +74,37 @@ defineExpose({ isMounted });
     <!-- main-area -->
     <main>
         <!-- banner-area -->
-        <MainPageBanner />
+        <MainPageEnBanner />
         <!-- banner-area-end -->
 
         <!-- services-area -->
-        <MainPageService />
+        <MainPageEnService />
         <!-- services-area-end -->
 
         <!-- about-area -->
-        <MainPageAbout />
+        <MainPageEnAbout />
         <!-- about-area-end -->
 
         <!-- team-area -->
-        <!-- <MainPageTeam/> -->
+        <!-- <MainPageEnTeam/> -->
         <!-- team-area-end -->
 
         <!-- project-area -->
-        <MainPageProject />
+        <MainPageEnProject />
         <!-- project-area-end -->
 
         <!-- our-client-area -->
-        <MainPageClients />
+        <MainPageEnClients />
         <!-- our-client-area-end -->
         <!-- Service 2 Area -->
-        <MainPageService2 />
+        <MainPageEnService2 />
         <!-- Service 2 Area end-->
         <!-- testimonial-area -->
-        <!-- <MainPageTestimonial/> -->
+        <!-- <MainPageEnTestimonial/> -->
         <!-- testimonial-area-end -->
 
         <!-- consultation-area -->
-        <MainPageConsultation />
+        <MainPageEnConsultation />
         <!-- consultation-area-end -->
 
         <!-- blog-area -->
@@ -112,7 +112,7 @@ defineExpose({ isMounted });
         <!-- blog-area-end -->
 
         <!-- newsletter-area -->
-        <MainPageNewsLetter />
+        <MainPageEnNewsLetter />
         <!-- newsletter-area-end -->
     </main>
     <!-- main-area-end -->

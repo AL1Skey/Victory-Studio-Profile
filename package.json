@@ -3,14 +3,16 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "nuxt build",
-    "dev": "nuxt dev --force --host",
-    "generate": "nuxt generate",
-    "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "build": "rimraf .nuxt && nuxt build",
+    "clean": "rm -rf .nuxt",
+    "dev": "rimraf .nuxt && nuxt dev --force --host",
+    "generate": "rimraf .nuxt && nuxt generate",
+    "preview": "rimraf .nuxt && nuxt preview",
+    "postinstall": "rimraf .nuxt && nuxt prepare"
   },
   "dependencies": {
     "@kalimahapps/vue-icons": "^1.7.1",
+    "@nuxtjs/i18n": "^9.0.0-rc.2",
     "@nuxtjs/tailwindcss": "^6.12.2",
     "aos": "^2.3.4",
     "emailjs": "^4.0.3",
@@ -28,6 +30,7 @@
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",
-    "cssnano": "^7.0.6"
+    "cssnano": "^7.0.6",
+    "rimraf": "^6.0.1"
   }
 }
