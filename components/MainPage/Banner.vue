@@ -31,7 +31,7 @@ onMounted(() => {
                         data-aos="fade-left"
                         data-aos-duration="1500"
                     >
-                        <img
+                        <img loading="lazy"
                             src="assets/img/banner/banner_img.png"
                             alt="Banner Image"
 
@@ -94,42 +94,42 @@ onMounted(() => {
 
         <!-- Decorative Shapes -->
         <div class="banner-shape-wrap">
-            <img
+            <img loading="lazy"
                 src="assets/img/banner/banner_shape01.png"
                 alt="Shape 1"
                 data-aos="fade-in"
             />
-            <img
+            <img loading="lazy"
                 src="assets/img/banner/banner_shape02.png"
                 alt="Shape 2"
                 class="animationFramesOne"
                 data-aos="fade-down"
             />
-            <img
+            <img loading="lazy"
                 src="assets/img/banner/banner_shape03.png"
                 alt="Shape 3"
                 class="contactSwimmer"
                 data-aos="fade-up"
             />
-            <img
+            <img loading="lazy"
                 src="assets/img/banner/banner_shape04.png"
                 alt="Shape 4"
                 class="rotateme"
                 data-aos="fade-right"
             />
-            <img
+            <img loading="lazy"
                 src="assets/img/banner/banner_shape05.png"
                 alt="Shape 5"
                 class="animation1"
                 data-aos="fade-left"
             />
-            <img
+            <img loading="lazy"
                 src="assets/img/banner/banner_shape06.png"
                 alt="Shape 6"
                 class="ribbonRotate"
                 data-aos="zoom-in"
             />
-            <img
+            <img loading="lazy"
                 src="assets/img/banner/banner_shape07.png"
                 alt="Shape 7"
                 class="float-bob-x"

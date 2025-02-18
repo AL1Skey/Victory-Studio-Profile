@@ -8,32 +8,32 @@
         <div class="row align-items-center">
           <div class="col-lg-6">
             <div class="team-img-wrap">
-              <img
+              <img loading="lazy"
                 src="assets/img/team/team_img_shape.png"
                 alt=""
                 class="img-shape"
               />
-              <img
+              <img loading="lazy"
                 src="assets/img/team/team_img01.png"
                 alt=""
                 class="img-one"
               />
-              <img
+              <img loading="lazy"
                 src="assets/img/team/team_img02.png"
                 alt=""
                 class="img-two"
               />
-              <img
+              <img loading="lazy"
                 src="assets/img/team/team_img03.png"
                 alt=""
                 class="img-three"
               />
-              <img
+              <img loading="lazy"
                 src="assets/img/team/team_img04.png"
                 alt=""
                 class="img-four"
               />
-              <img
+              <img loading="lazy"
                 src="assets/img/team/team_img05.png"
                 alt=""
                 class="img-five"
@@ -58,12 +58,12 @@
         </div>
       </div>
       <div class="team-shape-wrap">
-        <img
+        <img loading="lazy"
           src="assets/img/images/team_shape01.png"
           alt=""
           class="ribbonRotate"
         />
-        <img
+        <img loading="lazy"
           src="assets/img/images/team_shape02.png"
           alt=""
           class="float-bob-x"

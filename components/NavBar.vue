@@ -1,5 +1,9 @@
 <script lang="ts" setup>
-
+function changeLang() {
+  if (typeof window !== 'undefined') {
+    window.location.href = '/en';
+  }
+}
 </script>
 
 <template>
@@ -27,7 +31,7 @@
                       <a href="#services-area">Services</a>
                     </li>
                     <li><a href="#footer-area">Contact Us</a></li>
-
+                    <li><a href="#" @click="changeLang">En</a></li>
                   </ul>
                 </div>
                 <div class="header-action">

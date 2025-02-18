@@ -37,7 +37,7 @@
                 >
                     <swiper-slide >
                         <a href="https://pintarlabs.web.app/">
-                            <img
+                            <img loading="lazy"
                                 src="assets/2.png"
                                 alt=""
                                 class="tw-w-[1000px]"
@@ -46,7 +46,7 @@
                     </swiper-slide>
                     <swiper-slide >
                         <a href="https://pintarlabs.web.app/">
-                            <img
+                            <img loading="lazy"
                                 src="assets/7.png"
                                 alt=""
                                 class="tw-w-[1000px]"
@@ -56,7 +56,7 @@
 
                     <swiper-slide>
                         <a href="https://topazmaritime.co.id/">
-                            <img
+                            <img loading="lazy"
                                 src="assets/1.png"
                                 alt=""
                                 class="tw-w-[1000px]"
@@ -65,7 +65,7 @@
                     </swiper-slide>
                     <swiper-slide>
                         <a href="https://mts-pesri-kendari.sch.id/">
-                            <img
+                            <img loading="lazy"
                                 src="assets/5.png"
                                 alt=""
                                 class="tw-w-[1000px]"
@@ -75,7 +75,7 @@
 
                     <swiper-slide>
                         <a href="https://zainufirdaus.web.app/">
-                            <img
+                            <img loading="lazy"
                                 src="assets/3.png"
                                 alt=""
                                 class="tw-w-[1000px]"
@@ -85,7 +85,7 @@
 
                     <swiper-slide>
                         <a href="https://iaajofficial.com/">
-                            <img
+                            <img loading="lazy"
                                 src="assets/4.png"
                                 alt=""
                                 class="tw-w-[1000px]"
@@ -95,7 +95,7 @@
 
                     <swiper-slide>
                         <a href="https://risharchery.com/">
-                            <img
+                            <img loading="lazy"
                                 src="assets/6.png"
                                 alt=""
                                 class="tw-w-[1000px]"
@@ -106,12 +106,12 @@
             </div>
         </div>
         <div class="project-shape-wrap">
-            <img
+            <img loading="lazy"
                 src="assets/img/project/project_shape01.png"
                 alt="Shape One"
                 class="shape-one ribbonRotate"
             />
-            <img
+            <img loading="lazy"
                 src="assets/img/project/project_shape02.png"
                 alt="Shape Two"
                 class="shape-two ribbonRotate"

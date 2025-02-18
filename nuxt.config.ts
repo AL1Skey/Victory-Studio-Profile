@@ -6,7 +6,7 @@ export default defineNuxtConfig({
     //   { src: 'plugins/external-scripts.js', mode: 'client' },
     //   { src: 'plugins/external-style.js', mode: 'client' },
     // ],
-    css: ["~/assets/css/main.css"],
+    css: ["~/assets//css/main.css"],
 
     app: {
         head: {
@@ -299,16 +299,16 @@ export default defineNuxtConfig({
                     type: "image/png",
                     href: "images/Logo/logo.png",
                 },
-                { rel: "stylesheet", href: "css/bootstrap.min.css" },
-                { rel: "stylesheet", href: "css/animate.min.css" },
-                { rel: "stylesheet", href: "css/magnific-popup.css" },
-                { rel: "stylesheet", href: "css/fontawesome-all.min.css" },
-                { rel: "stylesheet", href: "css/swiper-bundle.min.css" },
-                { rel: "stylesheet", href: "css/odometer.css" },
-                { rel: "stylesheet", href: "css/slick.css" },
-                { rel: "stylesheet", href: "css/default.css" },
-                { rel: "stylesheet", href: "css/style.css" },
-                { rel: "stylesheet", href: "css/responsive.css" },
+                { rel: "stylesheet", href: "/css/bootstrap.min.css" },
+                { rel: "stylesheet", href: "/css/animate.min.css" },
+                { rel: "stylesheet", href: "/css/magnific-popup.css" },
+                { rel: "stylesheet", href: "/css/fontawesome-all.min.css" },
+                { rel: "stylesheet", href: "/css/swiper-bundle.min.css" },
+                { rel: "stylesheet", href: "/css/odometer.css" },
+                { rel: "stylesheet", href: "/css/slick.css" },
+                { rel: "stylesheet", href: "/css/default.css" },
+                { rel: "stylesheet", href: "/css/style.css" },
+                { rel: "stylesheet", href: "/css/responsive.css" },
             ],
         },
     },
@@ -316,16 +316,16 @@ export default defineNuxtConfig({
     ssr: true,
 
     // css : [
-    //   "@/assets/css/bootstrap.min.css",
-    //   "@/assets/css/animate.min.css",
-    //   "@/assets/css/magnific-popup.css",
-    //   "@/assets/css/fontawesome-all.min.css",
-    //   "@/assets/css/swiper-bundle.min.css",
-    //   "@/assets/css/odometer.css",
-    //   "@/assets/css/slick.css",
-    //   "@/assets/css/default.css",
-    //   "@/assets/css/style.css",
-    //   "@/assets/css/responsive.css"
+    //   "@/assets//css/bootstrap.min.css",
+    //   "@/assets//css/animate.min.css",
+    //   "@/assets//css/magnific-popup.css",
+    //   "@/assets//css/fontawesome-all.min.css",
+    //   "@/assets//css/swiper-bundle.min.css",
+    //   "@/assets//css/odometer.css",
+    //   "@/assets//css/slick.css",
+    //   "@/assets//css/default.css",
+    //   "@/assets//css/style.css",
+    //   "@/assets//css/responsive.css"
     //   ],
     // vite: {
     //   build: {
@@ -345,7 +345,7 @@ export default defineNuxtConfig({
         },
     },
 
-    modules: ["@nuxtjs/tailwindcss","@nuxtjs/i18n"],
+    modules: ["@nuxtjs/tailwindcss", "@nuxtjs/i18n", "@nuxt/scripts"],
     i18n: {
         locales: [
           { code: 'en', iso: 'en-US', name: 'English', file: 'en.json' },
@@ -361,6 +361,17 @@ export default defineNuxtConfig({
     nitro: {
         compressPublicAssets: true,
         static: true
+      },
+      image: {
+        quality: 80,
+        formats: ['webp'],
+        screens: {
+          xs: 320,
+          sm: 640,
+          md: 768,
+          lg: 1024,
+          xl: 1280
+        }
       },
     experimental: {
     payloadExtraction: true,

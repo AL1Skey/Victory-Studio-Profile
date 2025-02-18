@@ -23,7 +23,7 @@
                 </div>
                 <div class="testimonial-info">
                   <div class="thumb">
-                    <img
+                    <img loading="lazy"
                       src="assets/img/images/testimonial_avatar01.png"
                       alt=""
                     />
@@ -47,7 +47,7 @@
                 </div>
                 <div class="testimonial-info">
                   <div class="thumb">
-                    <img
+                    <img loading="lazy"
                       src="assets/img/images/testimonial_avatar02.png"
                       alt=""
                     />
@@ -71,7 +71,7 @@
                 </div>
                 <div class="testimonial-info">
                   <div class="thumb">
-                    <img
+                    <img loading="lazy"
                       src="assets/img/images/testimonial_avatar03.png"
                       alt=""
                     />
@@ -95,7 +95,7 @@
                 </div>
                 <div class="testimonial-info">
                   <div class="thumb">
-                    <img
+                    <img loading="lazy"
                       src="assets/img/images/testimonial_avatar04.png"
                       alt=""
                     />
@@ -119,7 +119,7 @@
                 </div>
                 <div class="testimonial-info">
                   <div class="thumb">
-                    <img
+                    <img loading="lazy"
                       src="assets/img/images/testimonial_avatar02.png"
                       alt=""
                     />
@@ -143,7 +143,7 @@
                 </div>
                 <div class="testimonial-info">
                   <div class="thumb">
-                    <img
+                    <img loading="lazy"
                       src="assets/img/images/testimonial_avatar03.png"
                       alt=""
                     />

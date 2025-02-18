@@ -6,7 +6,22 @@ const isMounted = ref(false);
 // State untuk menampilkan popup
 const showPopup = ref(false);
 
-onMounted(() => {
+onMounted(async() => {
+    await useScript({ src: '/assets/js/vendor/jquery-3.6.0.min.js', async: true, defer: true });
+    await useScript({ src: '/assets/js/bootstrap.min.js', async: true, defer: true });
+    await useScript({ src: '/assets/js/isotope.pkgd.min.js', async: true, defer: true });
+    await useScript({ src: '/assets/js/imagesloaded.pkgd.min.js', async: true, defer: true });
+    await useScript({ src: '/assets/js/jquery.magnific-popup.min.js', async: true, defer: true });
+    await useScript({ src: '/assets/js/jquery.odometer.min.js', async: true, defer: true });
+    await useScript({ src: '/assets/js/swiper-bundle.min.js', async: true, defer: true });
+    await useScript({ src: '/assets/js/jquery.appear.js', async: true, defer: true });
+    await useScript({ src: '/assets/js/slick.min.js', async: true, defer: true });
+    await useScript({ src: '/assets/js/ajax-form.js', async: true, defer: true });
+    await useScript({ src: '/assets/js/parallax.min.js', async: true, defer: true });
+    await useScript({ src: '/assets/js/jquery.parallaxScroll.min.js', async: true, defer: true });
+    await useScript({ src: '/assets/js/tween-max.js', async: true, defer: true });
+    await useScript({ src: '/assets/js/wow.min.js', async: true, defer: true });
+    await useScript({ src: '/assets/js/main.js', async: true, defer: true });
     isMounted.value = true;
 });
 
@@ -123,7 +138,7 @@ defineExpose({ isMounted });
 
     <!-- JS here -->
 
-    <Script src="js/vendor/jquery-3.6.0.min.js" async defer></Script>
+    <!-- <Script src="js/vendor/jquery-3.6.0.min.js" async defer></Script>
     <Script src="js/bootstrap.min.js" async defer></Script>
     <Script src="js/isotope.pkgd.min.js" async defer></Script>
     <Script src="js/imagesloaded.pkgd.min.js" async defer></Script>
@@ -137,7 +152,7 @@ defineExpose({ isMounted });
     <Script src="js/jquery.parallaxScroll.min.js" async defer></Script>
     <Script src="js/tween-max.js" async defer></Script>
     <Script src="js/wow.min.js" async defer></Script>
-    <Script src="js/main.js" async defer></Script>
+    <Script src="js/main.js" async defer></Script> -->
 </template>
 <!--
 <style scoped>

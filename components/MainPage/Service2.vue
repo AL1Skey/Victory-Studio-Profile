@@ -20,7 +20,7 @@ onMounted(() => {
             <div class="row align-items-center justify-content-center">
                 <div class="col-lg-6 col-md-9 order-0 order-lg-2">
                     <div class="developr-img tw-m-4">
-                        <img
+                        <img loading="lazy"
                             src="assets/logo2.jpg"
                             alt=""
                             data-aos="fade-left"

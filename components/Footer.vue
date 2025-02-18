@@ -84,7 +84,7 @@ const data = footerData;
             </div> -->
                         <div class="col-lg-3 col-sm-6">
                             <div class="footer-widget">
-                                <h4 class="fw-title">About Store</h4>
+                                <h4 class="fw-title">Contact Us</h4>
                                 <div class="footer-about">
                                     <ul class="list-wrap">
                                         <li>

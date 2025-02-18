@@ -31,7 +31,7 @@ const data = about;
                 >
                     <div class="col-46 order-0 order-lg-2" data-aos="fade-left">
                         <div class="about-img text-end">
-                            <img src="assets/logo1.jpg" alt="" class="tw-w-[1200px]" />
+                            <img loading="lazy" src="assets/logo1.jpg" alt="" class="tw-w-[1200px]" />
                         </div>
                     </div>
                     <div class="col-54">
@@ -57,7 +57,7 @@ const data = about;
                                     data-aos-duration="700"
                                 >
                                     <div class="icon">
-                                        <img
+                                        <img loading="lazy"
                                             src="assets/img/icon/about_icon01.png"
                                             alt=""
                                         />
@@ -74,7 +74,7 @@ const data = about;
                                     data-aos-duration="1100"
                                 >
                                     <div class="icon">
-                                        <img
+                                        <img loading="lazy"
                                             src="assets/img/icon/about_icon02.png"
                                             alt=""
                                         />

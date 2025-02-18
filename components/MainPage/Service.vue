@@ -27,7 +27,7 @@ onMounted(() => {
                         data-wow-delay=".2s"
                     >
                         <div class="services-icon">
-                            <img
+                            <img loading="lazy"
                                 src="assets/img/icon/services_icon01.png"
                                 alt="UI/UX Design Icon"
                             />
@@ -66,7 +66,7 @@ onMounted(() => {
                         data-wow-delay=".4s"
                     >
                         <div class="services-icon">
-                            <img
+                            <img loading="lazy"
                                 src="assets/img/icon/inner_services_icon02.png"
                                 alt="Company Profile Icon"
                             />
@@ -105,7 +105,7 @@ onMounted(() => {
                         data-wow-delay=".6s"
                     >
                         <div class="services-icon">
-                            <img
+                            <img loading="lazy"
                                 src="assets/img/icon/h3_services_icon02.png"
                                 alt="Custom Website Icon"
                             />
@@ -144,7 +144,7 @@ onMounted(() => {
                         data-wow-delay=".8s"
                     >
                         <div class="services-icon">
-                            <img
+                            <img loading="lazy"
                                 src="assets/img/icon/edit.png"
                                 alt="Mobile App Icon"
                             />

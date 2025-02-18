@@ -43,37 +43,37 @@ data-aos-anchor-placement="center-bottom">
         </div>
       </div> -->
       <div class="newsletter-shape-wrap">
-        <img
+        <img loading="lazy"
           src="assets/img/images/newsletter_bg_shape.png"
           alt=""
           class="bg-shape"
         />
-        <img
+        <img loading="lazy"
           src="assets/img/images/newsletter_shape01.png"
           alt=""
           class="shape-one"
         />
-        <img
+        <img loading="lazy"
           src="assets/img/images/newsletter_shape02.png"
           alt=""
           class="shape-two"
         />
-        <img
+        <img loading="lazy"
           src="assets/img/images/newsletter_shape03.png"
           alt=""
           class="shape-three"
         />
-        <img
+        <img loading="lazy"
           src="assets/img/images/newsletter_shape04.png"
           alt=""
           class="shape-four"
         />
-        <img
+        <img loading="lazy"
           src="assets/img/images/newsletter_shape05.png"
           alt=""
           class="shape-five"
         />
-        <img
+        <img loading="lazy"
           src="assets/img/images/newsletter_shape06.png"
           alt=""
           class="shape-six"

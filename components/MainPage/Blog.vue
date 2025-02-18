@@ -18,7 +18,7 @@
             <div class="blog-post-item">
               <div class="blog-post-thumb">
                 <a href="blog-details.html"
-                  ><img src="assets/img/blog/blog_img01.jpg" alt=""
+                  ><img loading="lazy" src="assets/img/blog/blog_img01.jpg" alt=""
                 /></a>
               </div>
               <div class="blog-post-content">
@@ -32,7 +32,7 @@
                   <ul class="list-wrap">
                     <li class="avatar-img">
                       <a href="blog.html"
-                        ><img src="assets/img/blog/blog_avatar01.png" alt=""
+                        ><img loading="lazy" src="assets/img/blog/blog_avatar01.png" alt=""
                       /></a>
                     </li>
                     <li>By <a href="blog.html">Ataur</a></li>
@@ -45,7 +45,7 @@
             <div class="blog-post-item">
               <div class="blog-post-thumb">
                 <a href="blog-details.html"
-                  ><img src="assets/img/blog/blog_img02.jpg" alt=""
+                  ><img loading="lazy" src="assets/img/blog/blog_img02.jpg" alt=""
                 /></a>
               </div>
               <div class="blog-post-content">
@@ -59,7 +59,7 @@
                   <ul class="list-wrap">
                     <li class="avatar-img">
                       <a href="blog.html"
-                        ><img src="assets/img/blog/blog_avatar02.png" alt=""
+                        ><img loading="lazy" src="assets/img/blog/blog_avatar02.png" alt=""
                       /></a>
                     </li>
                     <li>By <a href="blog.html">Ataur</a></li>
@@ -72,7 +72,7 @@
             <div class="blog-post-item">
               <div class="blog-post-thumb">
                 <a href="blog-details.html"
-                  ><img src="assets/img/blog/blog_img03.jpg" alt=""
+                  ><img loading="lazy" src="assets/img/blog/blog_img03.jpg" alt=""
                 /></a>
               </div>
               <div class="blog-post-content">
@@ -86,7 +86,7 @@
                   <ul class="list-wrap">
                     <li class="avatar-img">
                       <a href="blog.html"
-                        ><img src="assets/img/blog/blog_avatar03.png" alt=""
+                        ><img loading="lazy" src="assets/img/blog/blog_avatar03.png" alt=""
                       /></a>
                     </li>
                     <li>By <a href="blog.html">Ataur</a></li>
